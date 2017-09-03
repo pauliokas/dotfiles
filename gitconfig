@@ -1,19 +1,19 @@
 [user]
 	name = Paulius Kigas
-	email = pk@platform-lunar.com
+	useConfigOnly = true
 
 [push]
 	default = simple
 
 [alias]
 	f = fetch --tags
-	
+
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 
 	diffc = diff --cached
-	
+
 	publish = "!git push --set-upstream origin `git branch-name`"
-	
+
 	co = checkout
 	st = status
 	br = branch
@@ -27,7 +27,7 @@
 	le = log --oneline --decorate
 
 	filelog = log -u
-	
+
 	sshow = "!f() { git stash show stash^{/$@} --patch ; } ; f"
 	sapply = "!f() { git stash apply stash^{/$@} ; } ; f"
 	ssave = "!f() { git stash save \"$@\" ; } ; f"
@@ -50,4 +50,7 @@
 
 [init]
 	templatedir = ~/.gittemplate
+
+[include]
+	path = ~/.gitconfig_local
 

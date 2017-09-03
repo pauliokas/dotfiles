@@ -1,3 +1,18 @@
 [submodule "dotbot"]
 	path = .dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "zsh/oh-my-zsh"]
+	path = zsh/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "zsh/zgen"]
+	path = zsh/zgen
+	url = https://github.com/tarjoilija/zgen
+[submodule "zsh/zsh-git-prompt"]
+	path = zsh/zsh-git-prompt
+	url = https://github.com/olivierverdier/zsh-git-prompt
+[submodule "zsh/zsh-sensible"]
+	path = zsh/zsh-sensible
+	url = https://github.com/hanjianwei/zsh-sensible
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

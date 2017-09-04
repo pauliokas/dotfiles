@@ -1,2 +1,1 @@
-alias gw='./gradlew --parallel'
-
+alias gw='./gradlew'

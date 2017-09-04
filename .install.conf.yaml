@@ -4,12 +4,14 @@
 - defaults:
     link:
       create: true
+      relink: true
 
 - link:
     ~/.gitconfig:
     ~/.gittemplate:
     ~/.zshrc:
     ~/.zsh:
+    ~/.iterm2_shell_integration.zsh:
 
 - shell:
     - git submodule update --init --recursive

@@ -17,3 +17,8 @@
     - which imagesnap || brew install imagesnap
     - ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
     - source zshrc
+
+    # iTerm2 settings
+    - defaults write com.googlecode.iterm2 PrefsCustomFolder -string $(pwd)/iterm2
+    - defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+    - defaults read com.googlecode.iterm2

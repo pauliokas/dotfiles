@@ -19,7 +19,7 @@ if ! zgen saved; then
 	zgen load ${PLUGINS}/user/prompt.zsh
 	zgen load ${PLUGINS}/user/rprompt.zsh
 
-	mkdir "${HOME}/.zgen"
+	mkdir -p "${HOME}/.zgen"
 	zgen save
 fi
 

@@ -18,9 +18,12 @@ if ! zgen saved; then
 	zgen load ${PLUGINS}/user/aliases.zsh
 	zgen load ${PLUGINS}/user/prompt.zsh
 	zgen load ${PLUGINS}/user/rprompt.zsh
+	zgen load ${PLUGINS}/user/functions.zsh
 
 	mkdir -p "${HOME}/.zgen"
 	zgen save
+
+	rm -f "${HOME}/.zcompdump"; compinit
 fi
 
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"

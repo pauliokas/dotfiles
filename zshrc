@@ -1,5 +1,6 @@
 autoload -Uz compinit
 compinit
+setopt extendedglob
 
 zstyle ':completion:*' menu select
 
@@ -31,3 +32,4 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f ${HOME}/.iterm2_shell_integration.zsh ] && source "${HOME}/.iterm2_shell_integration.zsh"
+

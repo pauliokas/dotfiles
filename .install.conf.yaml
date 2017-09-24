@@ -12,6 +12,7 @@
     ~/.zshrc:
     ~/.zsh:
     ~/.iterm2_shell_integration.zsh:
+    ~/.vimrc:
 
 - shell:
     - git submodule update --init --recursive

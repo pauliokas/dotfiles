@@ -11,7 +11,7 @@ if ! zgen saved; then
 
 	zgen load ${PLUGINS}/zsh-git-prompt
 	zgen load ${PLUGINS}/oh-my-zsh/plugins/gradle
-	zgen load ${PLUGINS}/oh-my-zsh/plugins/docker/_docker
+	zgen load ${PLUGINS}/oh-my-zsh/plugins/docker
 	zgen load ${PLUGINS}/oh-my-zsh/plugins/docker-compose
 	zgen load ${PLUGINS}/zsh-syntax-highlighting
 

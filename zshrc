@@ -20,6 +20,8 @@ if ! zgen saved; then
 	zgen load ${PLUGINS}/user/prompt.zsh
 	zgen load ${PLUGINS}/user/rprompt.zsh
 	zgen load ${PLUGINS}/user/functions.zsh
+	zgen load ${PLUGINS}/user/nvm.zsh
+	zgen load ${PLUGINS}/user/tab-title.zsh
 
 	mkdir -p "${HOME}/.zgen"
 	zgen save
@@ -32,4 +34,3 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f ${HOME}/.iterm2_shell_integration.zsh ] && source "${HOME}/.iterm2_shell_integration.zsh"
-

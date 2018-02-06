@@ -31,5 +31,3 @@ source ~/.zsh/user/tab-title.zsh
 
 source ~/.fzf.zsh
 source ~/.iterm2_shell_integration.zsh
-
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"

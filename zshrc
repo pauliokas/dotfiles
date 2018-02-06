@@ -1,36 +1,35 @@
 autoload -Uz compinit
-compinit
 setopt extendedglob
 
 zstyle ':completion:*' menu select
 
-source "${HOME}/.zsh/zgen/zgen.zsh"
-PLUGINS="${HOME}/.zsh"
-if ! zgen saved; then
-	zgen load ${PLUGINS}/zsh-sensible
+fpath=(
+  ~/.zsh/zsh-sensible
+  ~/.zsh/zsh-git-prompt
+  ~/.zsh/oh-my-zsh/plugins/gradle
+  ~/.zsh/oh-my-zsh/plugins/docker
+  ~/.zsh/oh-my-zsh/plugins/docker-compose
+  ~/.zsh/zsh-syntax-highlighting
+  ~/.zsh/user
+  ${fpath}
+)
 
-	zgen load ${PLUGINS}/zsh-git-prompt
-	zgen load ${PLUGINS}/oh-my-zsh/plugins/gradle
-	zgen load ${PLUGINS}/oh-my-zsh/plugins/docker
-	zgen load ${PLUGINS}/oh-my-zsh/plugins/docker-compose
-	zgen load ${PLUGINS}/zsh-syntax-highlighting
+compinit
 
-	zgen load ${PLUGINS}/user/env.zsh
-	zgen load ${PLUGINS}/user/aliases.zsh
-	zgen load ${PLUGINS}/user/prompt.zsh
-	zgen load ${PLUGINS}/user/rprompt.zsh
-	zgen load ${PLUGINS}/user/functions.zsh
-	zgen load ${PLUGINS}/user/nvm.zsh
-	zgen load ${PLUGINS}/user/tab-title.zsh
+source ~/.zsh/zsh-sensible/sensible.plugin.zsh
+source ~/.zsh/zsh-git-prompt/zshrc.sh
+source ~/.zsh/oh-my-zsh/plugins/gradle/gradle.plugin.zsh
+source ~/.zsh/oh-my-zsh/plugins/docker-compose/docker-compose.plugin.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source ~/.zsh/user/env.zsh
+source ~/.zsh/user/aliases.zsh
+source ~/.zsh/user/prompt.zsh
+source ~/.zsh/user/rprompt.zsh
+source ~/.zsh/user/functions.zsh
+source ~/.zsh/user/nvm.zsh
+source ~/.zsh/user/tab-title.zsh
 
-	mkdir -p "${HOME}/.zgen"
-	zgen save
-
-	rm -f "${HOME}/.zcompdump"; compinit
-fi
+source ~/.fzf.zsh
+source ~/.iterm2_shell_integration.zsh
 
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-[ -f ${HOME}/.iterm2_shell_integration.zsh ] && source "${HOME}/.iterm2_shell_integration.zsh"

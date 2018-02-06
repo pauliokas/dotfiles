@@ -19,8 +19,6 @@
 	br = branch
 	rmb = "!f() { git branch -D \"$1\" ; git push origin --delete \"$1\" ; } ; f"
 
-	cm = "!f() { BR=`git branch-name` && MSG=\"$1\" && (if [[ $BR =~ ^[A-Z]+-[0-9]+$ ]]; then MSG=\"$BR -- $MSG\"; fi); git commit -m \"$MSG\"; } ; f"
-
 	ls = log --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%an]" --decorate
 	ll = log --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%an]" --decorate --numstat
 	ld = log --pretty=format:"%C(yellow)%h\\ %ad%C(red)%d\\ %C(reset)%s%C(blue)\\ [%an]" --decorate --date=relative
@@ -33,17 +31,6 @@
 	ssave = "!f() { git stash save \"$@\" ; } ; f"
 
 	refresh = "!f() { git fetch && git rebase origin/master ; } ; f"
-
-	cleanup = "!f() { git fetch --prune && \
-			(EDITOR=$(git config core.editor) || EDITOR=vi) && \
-			BRANCHES=$(mktemp /tmp/merged-branches.XXXXXX) && \
-			git branch --merged=master \
-				| grep -v '^\\*' \
-				| grep -v 'master' >$BRANCHES && \
-			$EDITOR $BRANCHES && \
-			xargs git branch -d <$BRANCHES; \
-			rm -f $BRANCHES; \
-			} ; f"
 
 [core]
 	editor = vim

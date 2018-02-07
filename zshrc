@@ -1,7 +1,6 @@
-autoload -Uz compinit
-setopt extendedglob
+source ~/.zsh/zsh-sensible/sensible.plugin.zsh
 
-zstyle ':completion:*' menu select
+setopt EXTENDEDGLOB
 
 fpath=(
   ~/.zsh/zsh-sensible
@@ -16,18 +15,17 @@ fpath=(
 
 compinit
 
-source ~/.zsh/zsh-sensible/sensible.plugin.zsh
 source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/oh-my-zsh/plugins/gradle/gradle.plugin.zsh
 source ~/.zsh/oh-my-zsh/plugins/docker-compose/docker-compose.plugin.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source ~/.zsh/user/env.zsh
 source ~/.zsh/user/aliases.zsh
 source ~/.zsh/user/prompt.zsh
 source ~/.zsh/user/rprompt.zsh
 source ~/.zsh/user/functions.zsh
-source ~/.zsh/user/nvm.zsh
 source ~/.zsh/user/tab-title.zsh
 
 source ~/.fzf.zsh
 source ~/.iterm2_shell_integration.zsh
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh

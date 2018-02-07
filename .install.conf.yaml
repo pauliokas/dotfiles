@@ -18,7 +18,6 @@
     - git submodule update --init --recursive
     - which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     - which imagesnap || brew install imagesnap
-    - which nvm || brew install nvm
     - ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
     - source zshrc
 

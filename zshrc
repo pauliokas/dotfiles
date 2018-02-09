@@ -8,6 +8,7 @@ fpath=(
   ~/.zsh/oh-my-zsh/plugins/gradle
   ~/.zsh/oh-my-zsh/plugins/docker
   ~/.zsh/oh-my-zsh/plugins/docker-compose
+  ~/.zsh/oh-my-zsh/plugins/nvm
   ~/.zsh/zsh-syntax-highlighting
   ~/.zsh/user
   ${fpath}
@@ -24,6 +25,7 @@ source ~/.zsh/user/prompt.zsh
 source ~/.zsh/user/rprompt.zsh
 source ~/.zsh/user/functions.zsh
 source ~/.zsh/user/tab-title.zsh
+source ~/.zsh/user/nvm.zsh
 
 source ~/.fzf.zsh
 source ~/.iterm2_shell_integration.zsh

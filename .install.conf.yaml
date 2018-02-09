@@ -11,6 +11,7 @@
     ~/.gittemplate:
     ~/.zshrc:
     ~/.zsh:
+    ~/.nvm:
     ~/.iterm2_shell_integration.zsh:
     ~/.vimrc:
 

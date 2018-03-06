@@ -211,9 +211,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1704 27 606 456 1280 -100 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>124 308 796 473 0 0 1280 800 </string>
+	<string>1568 648 796 473 1280 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>29 143 570 452 0 0 1280 800 </string>
+	<string>1349 131 570 452 1280 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>574 333 570 452 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -297,12 +297,16 @@
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.020208755508065224</real>
+				<real>0.019099686294794083</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.54115492105484009</real>
+				<real>0.54114550352096558</real>
 				<key>Red Component</key>
-				<real>0.44977453351020813</real>
+				<real>0.44977381825447083</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>

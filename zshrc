@@ -27,6 +27,7 @@ source ~/.zsh/user/rprompt.zsh
 source ~/.zsh/user/functions.zsh
 source ~/.zsh/user/tab-title.zsh
 source ~/.zsh/user/nvm.zsh
+source ~/.zsh/user/fasd.zsh
 
 source ~/.fzf.zsh
 source ~/.iterm2_shell_integration.zsh

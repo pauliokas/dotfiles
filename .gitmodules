@@ -22,3 +22,6 @@
 [submodule "nvm"]
 	path = nvm
 	url = https://github.com/creationix/nvm.git
+[submodule "zsh/fasd"]
+	path = zsh/fasd
+	url = https://github.com/clvv/fasd

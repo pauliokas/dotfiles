@@ -19,7 +19,10 @@
     - git submodule update --init --recursive
     - which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     - which realpath || brew install coreutils
+
     - which imagesnap || brew install imagesnap
+    - mkdir -p $HOME/.gitshots
+
     - ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
     - source zshrc
     - PREFIX=$HOME make -C ./zsh/fasd install

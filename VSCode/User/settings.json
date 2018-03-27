@@ -1,0 +1,8 @@
+{
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "git.autofetch": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "vscode-great-icons"
+}

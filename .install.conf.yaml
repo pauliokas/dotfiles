@@ -29,6 +29,9 @@
     - command: (which imagesnap || brew install imagesnap) && mkdir -p $HOME/.gitshots
       description: Setting up git shots
 
+    - command: brew cask ls --versions font-fira-code || brew cask install font-fira-code
+      description: Install FiraCode font
+
     - command: ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
       description: Installing fzf
 

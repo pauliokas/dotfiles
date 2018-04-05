@@ -2,7 +2,26 @@
     "[javascript]": {
         "editor.tabSize": 2
     },
+
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+
     "git.autofetch": true,
+
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.defaultDateStyle": "absolute",
+
+    "window.zoomLevel": 0,
+
     "workbench.colorTheme": "Solarized Dark",
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
 }

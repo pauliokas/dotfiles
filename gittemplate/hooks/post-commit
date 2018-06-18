@@ -1,4 +1,4 @@
 #!/bin/sh
 
-imagesnap -q -w 1 $HOME/.gitshots/$(date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s")_$(basename `pwd`).png &
+imagesnap -q -w 1 $HOME/.gitshots/$(date "+%s")_$(basename `pwd`).png &
 

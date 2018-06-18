@@ -15,13 +15,14 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
+        "suppressResultsExplorerNotice": true,
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.defaultDateStyle": "absolute",
 
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
 
     "workbench.colorTheme": "Solarized Dark",
     "workbench.iconTheme": "vscode-great-icons",
+    "gitlens.historyExplorer.enabled": true,
 }

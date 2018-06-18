@@ -220,11 +220,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>224 222 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 494 620 392 0 0 1680 1027 </string>
+	<string>330 307 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 141 796 473 0 0 1680 1027 </string>
+	<string>147 343 918 381 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>350 476 570 452 0 0 1680 1027 </string>
+	<string>161 265 906 452 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>92 121 570 452 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -246,11 +246,11 @@
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.14145714044570923</real>
+				<real>0.14145712554454803</real>
 				<key>Green Component</key>
-				<real>0.10840655118227005</real>
+				<real>0.10840645432472229</real>
 				<key>Red Component</key>
-				<real>0.81926977634429932</real>
+				<real>0.81926983594894409</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -308,16 +308,12 @@
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.019099686294794083</real>
-				<key>Color Space</key>
-				<string>Calibrated</string>
+				<real>0.020208755508065224</real>
 				<key>Green Component</key>
-				<real>0.54114550352096558</real>
+				<real>0.54115492105484009</real>
 				<key>Red Component</key>
-				<real>0.44977381825447083</real>
+				<real>0.44977453351020813</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -387,11 +383,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.15170273184776306</real>
+				<real>0.86405980587005615</real>
 				<key>Green Component</key>
-				<real>0.11783610284328461</real>
+				<real>0.95794391632080078</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.98943418264389038</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -404,9 +400,9 @@
 				<key>Blue Component</key>
 				<real>0.0</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.1491314172744751</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -421,11 +417,11 @@
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.56363654136657715</real>
+				<real>0.38298487663269043</real>
 				<key>Green Component</key>
-				<real>0.56485837697982788</real>
+				<real>0.35665956139564514</real>
 				<key>Red Component</key>
-				<real>0.50599193572998047</real>
+				<real>0.27671992778778076</real>
 			</dict>
 			<key>Character Encoding</key>
 			<integer>4</integer>
@@ -438,11 +434,11 @@
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.51685798168182373</real>
+				<real>0.43850564956665039</real>
 				<key>Green Component</key>
-				<real>0.50962930917739868</real>
+				<real>0.40717673301696777</real>
 				<key>Red Component</key>
-				<real>0.44058024883270264</real>
+				<real>0.32436618208885193</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -451,20 +447,20 @@
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.91000000000000003</real>
+				<real>0.9268307089805603</real>
 				<key>Red Component</key>
-				<real>0.65000000000000002</real>
+				<real>0.70213186740875244</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.19370138645172119</real>
+				<real>0.79781103134155273</real>
 				<key>Green Component</key>
-				<real>0.15575926005840302</real>
+				<real>0.89001238346099854</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.91611063480377197</real>
 			</dict>
 			<key>Custom Command</key>
 			<string>No</string>
@@ -481,11 +477,11 @@
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.51685798168182373</real>
+				<real>0.43850564956665039</real>
 				<key>Green Component</key>
-				<real>0.50962930917739868</real>
+				<real>0.40717673301696777</real>
 				<key>Red Component</key>
-				<real>0.44058024883270264</real>
+				<real>0.32436618208885193</real>
 			</dict>
 			<key>Guid</key>
 			<string>E4BAE82C-3534-4834-9311-4D3671EEE5C1</string>
@@ -774,13 +770,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.67800000000000005</real>
+				<real>0.73423302173614502</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.27000000000000002</real>
+				<real>0.35916060209274292</real>
 				<key>Red Component</key>
-				<real>0.023</real>
+				<real>0.0</real>
 			</dict>
 			<key>Mouse Reporting</key>
 			<true/>
@@ -813,20 +809,20 @@
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.56363654136657715</real>
+				<real>0.38298487663269043</real>
 				<key>Green Component</key>
-				<real>0.56485837697982788</real>
+				<real>0.35665956139564514</real>
 				<key>Red Component</key>
-				<real>0.50599193572998047</real>
+				<real>0.27671992778778076</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.19370138645172119</real>
+				<real>0.79781103134155273</real>
 				<key>Green Component</key>
-				<real>0.15575926005840302</real>
+				<real>0.89001238346099854</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.91611063480377197</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1505,6 +1501,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>2</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>2</integer>
 	<key>PointerActions</key>
@@ -1542,6 +1540,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/paulius/Projects/dotfiles/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1551,11 +1551,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-14T09:36:17Z</date>
+	<date>2018-04-27T15:53:08Z</date>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -1575,7 +1575,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

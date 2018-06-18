@@ -15,6 +15,7 @@
     ~/.iterm2_shell_integration.zsh:
     ~/.vimrc:
     ~/Library/Application Support/Code/User: VSCode/User
+    ~/bin/alert: bin/alert
 
 - shell:
     - command: git submodule update --init --recursive

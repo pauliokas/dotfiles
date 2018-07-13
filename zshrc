@@ -17,6 +17,7 @@ fpath=(
 compinit
 
 source ~/.zsh/zsh-git-prompt/zshrc.sh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/oh-my-zsh/plugins/gradle/gradle.plugin.zsh
 source ~/.zsh/oh-my-zsh/plugins/docker-compose/docker-compose.plugin.zsh
 source ~/.zsh/oh-my-zsh/plugins/yarn/yarn.plugin.zsh

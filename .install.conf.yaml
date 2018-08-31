@@ -13,7 +13,7 @@
     ~/.zsh:
     ~/.nvm:
     ~/.iterm2_shell_integration.zsh:
-    ~/.vimrc:
+    ~/.vim:
     ~/Library/Application Support/Code/User: VSCode/User
     ~/bin/alert: bin/alert
 

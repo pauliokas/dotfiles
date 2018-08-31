@@ -2,6 +2,11 @@
     "[javascript]": {
         "editor.tabSize": 2
     },
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+        "editor.rulers": [80],
+    },
 
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -24,10 +29,20 @@
 
     "workbench.colorTheme": "Solarized Dark",
     "workbench.iconTheme": "vscode-great-icons",
-    "gitlens.historyExplorer.enabled": false,
-    "gitlens.codeLens.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "jetbrainsKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
+
+    "testSidebar.node": "/Users/paulius/Projects/dotfiles/nvm/versions/node/v8.9.4/bin/node",
+    "testSidebar.glob": "**/*.spec.js",
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.gitExplorer.location": "scm",
+    "gitlens.historyExplorer.location": "scm",
+    "gitlens.resultsExplorer.location": "scm",
+
+    "terminal.integrated.rendererType": "dom",
+    "breadcrumbs.enabled": true,
 }

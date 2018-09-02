@@ -9,6 +9,7 @@
 - link:
     ~/.gitconfig:
     ~/.gittemplate:
+    ~/.gitignore:
     ~/.zshrc:
     ~/.zsh:
     ~/.nvm:

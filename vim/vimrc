@@ -1,8 +1,38 @@
+set runtimepath+=~/.zsh/fzf
+
 syntax on
+set background=dark
+colorscheme solarized
+
 set number
+set scrolloff=5
+set laststatus=2
+set title
+set showcmd
+
+set smartindent
+set smarttab
+set backspace=indent,eol,start
+
+set hlsearch
+set incsearch
 
 set nocompatible
 filetype plugin on
 set modeline
 set modelines=5
+
+set mouse=a
+set updatetime=100
+set statusline=%f%m%r%h%w%=%y[%l,%v][%p%%]
+
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 3
+"let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+packloadall
+silent! helptags ALL
 

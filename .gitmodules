@@ -28,3 +28,6 @@
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "zsh/prettyping"]
+	path = zsh/prettyping
+	url = https://github.com/denilsonsa/prettyping.git

@@ -33,6 +33,9 @@
     - command: brew cask ls --versions font-fira-code || brew cask install font-fira-code
       description: Install FiraCode font
 
+    - command: which bat || brew install bat
+      description: Install bat
+
     - command: ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
       description: Installing fzf
 

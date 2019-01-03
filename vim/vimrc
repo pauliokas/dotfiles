@@ -33,6 +33,9 @@ let g:netrw_browse_split = 3
 "let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
+"map <D-M-p> :call fzf#call({'sink': 'tabedit'})
+noremap <Leader>e :call fzf#run({'sink': 'tabedit'})<CR>
+
 packloadall
 silent! helptags ALL
 

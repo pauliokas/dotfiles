@@ -45,4 +45,11 @@
 
     "terminal.integrated.rendererType": "dom",
     "breadcrumbs.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "editor.suggest.localityBonus": true,
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
 }

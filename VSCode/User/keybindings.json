@@ -9,5 +9,10 @@
         "key": "alt+down",
         "command": "undo_expand_region",
         "when": "editorTextFocus && editorHasSelection"
-    }
+    },
+    {
+        "key": "alt+backspace",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
 ]

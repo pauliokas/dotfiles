@@ -28,9 +28,6 @@
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule "zsh/prettyping"]
-	path = zsh/prettyping
-	url = https://github.com/denilsonsa/prettyping.git
 [submodule "vim/pack/plugins/start/vim-colors-solarized"]
 	path = vim/pack/plugins/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -40,3 +37,6 @@
 [submodule "vim/pack/plugins/start/vim-gitgutter"]
 	path = vim/pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "zsh/prettyping"]
+	path = zsh/prettyping
+	url = https://github.com/denilsonsa/prettyping.git

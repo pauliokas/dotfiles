@@ -8,34 +8,15 @@
 
 - link:
     ~/.gitconfig:
-    ~/.gittemplate:
-    ~/.gitignore:
+    ~/.gitignore_global:
     ~/.zshrc:
     ~/.zsh:
     ~/.nvm:
-    ~/.iterm2_shell_integration.zsh:
     ~/.vim:
-    ~/Library/Application Support/Code/User: VSCode/User
-    ~/bin/alert: bin/alert
 
 - shell:
     - command: git submodule update --init --recursive
       description: Installing submodules
-
-    - command: which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-      description: Installing brew
-
-    - command: which realpath || brew install coreutils
-      description: Installing coreutils
-
-    - command: (which imagesnap || brew install imagesnap) && mkdir -p $HOME/.gitshots
-      description: Setting up git shots
-
-    - command: brew cask ls --versions font-fira-code || brew cask install font-fira-code
-      description: Install FiraCode font
-
-    - command: which bat || brew install bat
-      description: Install bat
 
     - command: ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
       description: Installing fzf
@@ -45,9 +26,3 @@
 
     - command: source zshrc
       description: Sourcing zshrc
-
-    - command: >
-        defaults write com.googlecode.iterm2 PrefsCustomFolder -string $(pwd)/iterm2 &&
-        defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true &&
-        defaults read com.googlecode.iterm2
-      description: Setting up iTerm2

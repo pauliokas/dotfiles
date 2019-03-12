@@ -34,13 +34,7 @@
 
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
-
-[init]
-	templatedir = ~/.gittemplate
-
-[include]
-	path = ~/.gitconfig_local
+	excludesfile = ~/.gitignore_global
 
 [rebase]
 	autosquash = true

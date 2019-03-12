@@ -1,4 +1,0 @@
-#!/bin/sh
-
-imagesnap -q -w 1 $HOME/.gitshots/$(date "+%s")_$(basename `pwd`).png &
-

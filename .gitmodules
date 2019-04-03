@@ -37,3 +37,6 @@
 [submodule "zsh/prettyping"]
 	path = zsh/prettyping
 	url = https://github.com/denilsonsa/prettyping.git
+[submodule "zsh/zsh-git-prompt"]
+	path = zsh/zsh-git-prompt
+	url = https://github.com/starcraftman/zsh-git-prompt

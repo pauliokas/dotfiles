@@ -13,6 +13,7 @@
     ~/.zsh:
     ~/.nvm:
     ~/.vim:
+    ~/.tmux.conf:
 
 - shell:
     - command: git submodule update --init --recursive

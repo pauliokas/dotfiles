@@ -1,6 +1,6 @@
-export NVM_DIR="$(realpath $HOME/.nvm)"
+export NVM_DIR="${HOME}/.nvm"
 
 function nvm() {
-  source "$NVM_DIR/nvm.sh"
+  source "/usr/share/nvm/nvm.sh"
   nvm "$@"
 }

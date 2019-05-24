@@ -11,18 +11,13 @@
     ~/.gitignore_global:
     ~/.zshrc:
     ~/.zsh:
+    ~/.zshenv:
     ~/.vim:
     ~/.tmux.conf:
 
 - shell:
     - command: git submodule update --init --recursive
       description: Installing submodules
-
-    - command: ./zsh/fzf/install --no-fish --no-bash --key-bindings --completion --no-update-rc
-      description: Installing fzf
-
-    - command: PREFIX=$HOME make -C ./zsh/fasd install
-      description: Installing fasd
 
     - command: source zshrc
       description: Sourcing zshrc

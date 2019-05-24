@@ -1,7 +1,5 @@
-export FZF_DEFAULT_OPTS='--preview "\
-    ([[ $(file --mime {}) =~ inode/directory ]] && echo Directory) || \
-    ([[ $(file --mime {}) =~ binary ]] && echo Binary) || \
-    ((filename=$(basename -- {}) && \
-    ext=${filename##*.} && \
-    bat --language=${ext} --color=always {}) || \
-    cat {}) 2>/dev/null"'
+export FZF_DEFAULT_OPTS="--preview '_fzf_preview {}'"
+export FZF_TMUX=1
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh

@@ -4,21 +4,12 @@
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
-[submodule "zsh/zgen"]
-	path = zsh/zgen
-	url = https://github.com/tarjoilija/zgen
 [submodule "zsh/zsh-sensible"]
 	path = zsh/zsh-sensible
 	url = https://github.com/hanjianwei/zsh-sensible
 [submodule "zsh/zsh-syntax-highlighting"]
 	path = zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule "zsh/fzf"]
-	path = zsh/fzf
-	url = https://github.com/junegunn/fzf
-[submodule "zsh/fasd"]
-	path = zsh/fasd
-	url = https://github.com/clvv/fasd
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
@@ -31,9 +22,6 @@
 [submodule "vim/pack/plugins/start/vim-gitgutter"]
 	path = vim/pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "zsh/prettyping"]
-	path = zsh/prettyping
-	url = https://github.com/denilsonsa/prettyping.git
 [submodule "zsh/zsh-git-prompt"]
 	path = zsh/zsh-git-prompt
 	url = https://github.com/starcraftman/zsh-git-prompt

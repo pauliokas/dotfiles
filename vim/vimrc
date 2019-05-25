@@ -2,6 +2,7 @@ set runtimepath+=~/.zsh/fzf
 
 syntax on
 set background=dark
+colorscheme solarized
 
 set number
 set scrolloff=5

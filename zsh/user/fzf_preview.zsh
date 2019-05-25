@@ -10,6 +10,6 @@ function _fzf_preview() {
         return
     fi
 
-    bat --theme "zenburn" --style "plain" --color "always" $selected_path 2>/dev/null \
+    bat --style "plain" --color "always" $selected_path 2>/dev/null \
         || cat $selected_path
 }

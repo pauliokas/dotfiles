@@ -6,3 +6,4 @@ fi
 
 export ANDROID_SDK_ROOT="${HOME}/.android/Sdk"
 
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"

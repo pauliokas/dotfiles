@@ -14,6 +14,7 @@
     ~/.zshenv:
     ~/.vim:
     ~/.tmux.conf:
+    ~/.config/bat: bat
 
 - shell:
     - command: git submodule update --init --recursive
@@ -21,3 +22,6 @@
 
     - command: source zshrc
       description: Sourcing zshrc
+    
+    - command: bat cache --build
+      description: Built bat cache

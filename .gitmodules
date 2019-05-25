@@ -25,3 +25,12 @@
 [submodule "zsh/zsh-git-prompt"]
 	path = zsh/zsh-git-prompt
 	url = https://github.com/starcraftman/zsh-git-prompt
+[submodule "bat/themes/Solarized"]
+	path = bat/themes/Solarized
+	url = https://github.com/braver/Solarized
+[submodule "zsh/solarized/dircolors-solarized"]
+	path = zsh/solarized/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized
+[submodule "zsh/solarized/tmux-colors-solarized"]
+	path = zsh/solarized/tmux-colors-solarized
+	url = https://github.com/infokiller/tmux-colors-solarized

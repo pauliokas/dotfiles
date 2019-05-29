@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/vim,node,code,linux,python
-# Edit at https://www.gitignore.io/?templates=vim,node,code,linux,python
+# Created by https://www.gitignore.io/api/vim,node,code,linux,python,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=vim,node,code,linux,python,visualstudiocode
 
 ### Code ###
 .vscode/*
@@ -250,4 +250,12 @@ tags
 # Persistent undo
 [._]*.un~
 
-# End of https://www.gitignore.io/api/vim,node,code,linux,python
+### VisualStudioCode ###
+
+/.vscode
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/vim,node,code,linux,python,visualstudiocode

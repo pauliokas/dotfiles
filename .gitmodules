@@ -22,9 +22,6 @@
 [submodule "vim/pack/plugins/start/vim-gitgutter"]
 	path = vim/pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "zsh/zsh-git-prompt"]
-	path = zsh/zsh-git-prompt
-	url = https://github.com/starcraftman/zsh-git-prompt
 [submodule "bat/themes/Solarized"]
 	path = bat/themes/Solarized
 	url = https://github.com/braver/Solarized

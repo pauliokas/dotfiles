@@ -11,18 +11,30 @@ function _is_git_repo() {
 function gr() {
     _is_git_repo || return
 
-    git log --pretty=format:"%C(yellow)%h %C(green)%ad%C(red)%d %C(reset)%s%C(blue) [%an]" --decorate=short --date=relative --graph --color=always |
+    git log --pretty=format:"%C(yellow)%h %C(green)%ad%C(red)%d %C(reset)%s%C(blue) [%an]%C(reset)" --decorate=short --date=relative --graph --color=always |
     fzf --height 40% --ansi --no-sort --reverse \
         --preview "grep -o '[a-f0-9]\{7,\}' <<< {} | head -n1 | xargs git show --color=always" |
     grep -o '[a-f0-9]\{7,\}' <<< {} | head -n1
 }
 
-function fzf_gr_widget() {
-    local result=$(gr)
-    zle reset-prompt
-    LBUFFER+=$result
+function gb() {
+    _is_git_repo || return
+
+    git branch -a --color=always | grep -v '/HEAD\s' |
+    fzf --height 40% --ansi --reverse \
+        --preview 'git log --oneline --graph --decorate=short --date=relative --color=always --pretty="format:%C(green)%ad%C(reset) %s" $(sed s/^..// <<< {} | cut -d" " -f1)' |
+    sed 's/^..//' | cut -d' ' -f1 |
+    sed 's#^remotes/##'
 }
 
-zle -N fzf_gr_widget
+bind_git_helper() {
+  local c
+  for c in $@; do
+    eval "fzf_g${c}_widget() { local result=\$(g$c); zle reset-prompt; LBUFFER+=\$result }"
+    eval "zle -N fzf_g${c}_widget"
+    eval "bindkey '^g^$c' fzf_g${c}_widget"
+  done
+}
 
-bindkey '^g^r' fzf_gr_widget
+bind_git_helper r b
+unset -f bind_git_helper

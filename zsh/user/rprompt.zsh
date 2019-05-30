@@ -1,2 +1,0 @@
-RPROMPT='$(git_super_status)'
-ZSH_THEME_GIT_PROMPT_CACHE=1

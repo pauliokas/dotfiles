@@ -31,3 +31,6 @@
 [submodule "zsh/solarized/tmux-colors-solarized"]
 	path = zsh/solarized/tmux-colors-solarized
 	url = https://github.com/infokiller/tmux-colors-solarized
+[submodule "zsh/zsh-git-prompt"]
+	path = zsh/zsh-git-prompt
+	url = https://github.com/pauliokas/zsh-git-prompt

@@ -27,7 +27,6 @@ source ~/.zsh/user/tab-title.zsh
 source ~/.zsh/user/nvm.zsh
 source ~/.zsh/user/fasd.zsh
 source ~/.zsh/user/fzf.zsh
-source ~/.zsh/user/dircolors.zsh
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 

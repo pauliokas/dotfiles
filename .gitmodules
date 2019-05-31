@@ -13,24 +13,12 @@
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule "vim/pack/plugins/start/vim-colors-solarized"]
-	path = vim/pack/plugins/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/pack/plugins/start/ale"]
 	path = vim/pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "vim/pack/plugins/start/vim-gitgutter"]
 	path = vim/pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "bat/themes/Solarized"]
-	path = bat/themes/Solarized
-	url = https://github.com/braver/Solarized
-[submodule "zsh/solarized/dircolors-solarized"]
-	path = zsh/solarized/dircolors-solarized
-	url = https://github.com/seebi/dircolors-solarized
-[submodule "zsh/solarized/tmux-colors-solarized"]
-	path = zsh/solarized/tmux-colors-solarized
-	url = https://github.com/infokiller/tmux-colors-solarized
 [submodule "zsh/zsh-git-prompt"]
 	path = zsh/zsh-git-prompt
 	url = https://github.com/pauliokas/zsh-git-prompt

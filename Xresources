@@ -1,0 +1,60 @@
+URxvt.loginShell:       true
+
+URxvt.transparent: true
+URxvt.shading: 60
+
+! Fonts
+URxvt.font: xft:Monospace:style=regular,pixelsize=14
+URxvt.boldFont:
+
+! Scrollbar
+URxvt.scrollBar: false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher
+URxvt.url-launcher:         xdg-open
+
+#define cBlackDark    #2e3436
+#define cBlackLight   #555753
+#define cRedDark      #cc0000
+#define cRedLight     #ef2929
+#define cGreenDark    #4e9a06
+#define cGreenLight   #8ae234
+#define cYellowDark   #c4a000
+#define cYellowLight  #fce94f
+#define cBlueDark     #3465a4
+#define cBlueLight    #729fcf
+#define cMagentaDark  #75507b
+#define cMagentaLight #ad7fa8
+#define cCyanDark     #06989a
+#define cCyanLight    #34e2e2
+#define cWhiteDark    #d3d7cf
+#define cWhiteLight   #eeeeec
+
+URxvt.color0: cBlackDark
+URxvt.color8: cBlackLight
+URxvt.color1: cRedDark
+URxvt.color9: cRedLight
+URxvt.color2: cGreenDark
+URxvt.color10: cGreenLight
+URxvt.color3: cYellowDark
+URxvt.color11: cYellowLight
+URxvt.color4: cBlueDark
+URxvt.color12: cBlueLight
+URxvt.color5: cMagentaDark
+URxvt.color13: cMagentaLight
+URxvt.color6: cCyanDark
+URxvt.color14: cCyanLight
+URxvt.color7: cWhiteDark
+URxvt.color15: cWhiteLight
+
+URxvt.cursorBlink: true
+URxvt.cursorColor: cWhiteDark
+
+URxvt.background: cBlackDark
+URxvt.foreground: cWhiteDark
+
+URxvt.fading: 30
+URxvt.fadeColor: cBlackLight
+
+URxvt.tintColor: cBlackDark

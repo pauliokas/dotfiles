@@ -15,6 +15,8 @@
     ~/.vim:
     ~/.tmux.conf:
     ~/.config/bat: bat
+    ~/.Xmodmap:
+    ~/.Xresources:
 
 - shell:
     - command: git submodule update --init --recursive

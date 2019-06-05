@@ -26,8 +26,7 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# Image source: https://www.reddit.com/r/wallpapers/comments/a4e84l/xpost_8_arch_linuxstyle_wallpapers_cc0_and/
-bindsym $mod+Escape exec i3lock --ignore-empty-password --image ~/Pictures/Wallpapers/arch-mesh.png
+bindsym $mod+Escape exec dm-tool lock
 
 # change focus
 bindsym $mod+h focus left

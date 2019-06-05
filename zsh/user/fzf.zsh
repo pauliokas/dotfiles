@@ -20,7 +20,7 @@ function gr() {
 function gb() {
     _is_git_repo || return
 
-    git branch -a --color=always | grep -v '/HEAD\s' |
+    git branch -a | grep -v '/HEAD\s' |
     fzf --height 40% --ansi --reverse \
         --preview 'git log --oneline --graph --decorate=short --date=relative --color=always --pretty="format:%C(green)%ad%C(reset) %s" $(sed s/^..// <<< {} | cut -d" " -f1)' |
     sed 's/^..//' | cut -d' ' -f1 |

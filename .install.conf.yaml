@@ -14,10 +14,13 @@
     ~/.zshenv:
     ~/.vim:
     ~/.tmux.conf:
-    ~/.config/bat: bat
-    ~/.config/i3: i3
     ~/.Xmodmap:
     ~/.Xresources:
+    ~/.xsession:
+    ~/.config/bat: bat
+    ~/.config/dunst: dunst
+    ~/.config/i3: i3
+    ~/.config/i3status: i3status
 
 - shell:
     - command: git submodule update --init --recursive

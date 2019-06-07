@@ -1,10 +1,9 @@
-URxvt.loginShell:       true
+URxvt.loginShell: true
 
-URxvt.transparent: true
-URxvt.shading: 60
+URxvt.depth: 32
 
 ! Fonts
-URxvt.font: xft:Monospace:style=regular,pixelsize=14
+URxvt.font: xft:Monospace:style=regular:pixelsize=18
 URxvt.boldFont:
 
 ! Scrollbar
@@ -31,30 +30,28 @@ URxvt.url-launcher:         xdg-open
 #define cWhiteDark    #d3d7cf
 #define cWhiteLight   #eeeeec
 
-URxvt.color0: cBlackDark
-URxvt.color8: cBlackLight
-URxvt.color1: cRedDark
-URxvt.color9: cRedLight
-URxvt.color2: cGreenDark
-URxvt.color10: cGreenLight
-URxvt.color3: cYellowDark
-URxvt.color11: cYellowLight
-URxvt.color4: cBlueDark
-URxvt.color12: cBlueLight
-URxvt.color5: cMagentaDark
-URxvt.color13: cMagentaLight
-URxvt.color6: cCyanDark
-URxvt.color14: cCyanLight
-URxvt.color7: cWhiteDark
-URxvt.color15: cWhiteLight
+*color0: cBlackDark
+*color8: cBlackLight
+*color1: cRedDark
+*color9: cRedLight
+*color2: cGreenDark
+*color10: cGreenLight
+*color3: cYellowDark
+*color11: cYellowLight
+*color4: cBlueDark
+*color12: cBlueLight
+*color5: cMagentaDark
+*color13: cMagentaLight
+*color6: cCyanDark
+*color14: cCyanLight
+*color7: cWhiteDark
+*color15: cWhiteLight
 
 URxvt.cursorBlink: true
 URxvt.cursorColor: cWhiteDark
 
-URxvt.background: cBlackDark
+URxvt.background: [90]cBlackDark
 URxvt.foreground: cWhiteDark
 
-URxvt.fading: 30
-URxvt.fadeColor: cBlackLight
-
-URxvt.tintColor: cBlackDark
+URxvt.fading: 15
+URxvt.fadeColor: [90]cBlackLight

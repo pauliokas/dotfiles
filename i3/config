@@ -151,7 +151,7 @@ mode $mode_power {
   bindsym p mode "default"; exec --no-startup-id systemctl poweroff
   bindsym r mode "default"; exec --no-startup-id systemctl reboot
   bindsym e mode "default"; exec i3-msg exit
-  bindsym l mode "default"; exec --no-startup-id dm-tool lock
+  bindsym l mode "default"; exec --no-startup-id gllock
   
   bindsym Return mode "default"
   bindsym Escape mode "default"

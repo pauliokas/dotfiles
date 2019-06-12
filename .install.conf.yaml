@@ -14,13 +14,15 @@
     ~/.zshenv:
     ~/.vim:
     ~/.tmux.conf:
+    ~/.xinitrc:
     ~/.Xmodmap:
     ~/.Xresources:
     ~/.xsession:
     ~/.config/bat: bat
     ~/.config/dunst: dunst
     ~/.config/i3: i3
-    ~/.config/i3status: i3status
+    ~/.config/polybar: polybar
+    ~/.config/redshift: redshift
 
 - shell:
     - command: git submodule update --init --recursive

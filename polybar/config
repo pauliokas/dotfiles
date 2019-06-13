@@ -184,8 +184,8 @@ label-visible-foreground = ${colors.foreground-alt}
 label-visible-padding = ${self.padding}
 
 label-urgent = %name%
-label-urgent-background = ${colors.background-alt}
-label-urgent-foreground = ${colors.foreground-alt}
+label-urgent-background = ${colors.alert}
+label-urgent-foreground = ${colors.foreground}
 label-urgent-padding = ${self.padding}
 
 [module/pulseaudio]

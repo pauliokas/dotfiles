@@ -76,7 +76,7 @@ label-padding = 1
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 75
+full-at = 78
 
 poll-interval = 5
 

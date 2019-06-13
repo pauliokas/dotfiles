@@ -39,7 +39,7 @@ border-bottom-color = ${self.background}
 
 modules-left = i3
 modules-center = 
-modules-right = keyboard wireless-network backlight pulseaudio battery date
+modules-right = keyboard temperature wireless-network backlight pulseaudio battery date
 
 font-0 = "Monospace:size=10:antialias=false;2"
 font-1 = "FontAwesome:size=10:style=solid;2"
@@ -232,3 +232,32 @@ format-prefix = 
 format-prefix-background = ${colors.cyanLight}
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-padding = 1
+
+[module/temperature]
+type = internal/temperature
+interval = 0.5
+hwmon-path = /sys/class/hwmon/hwmon0/temp1_input
+warn-temperature = 70
+units = false
+
+label = %temperature-c%
+label-background = ${colors.background-alt}
+label-foreground = ${colors.foreground-alt}
+label-padding = 1
+
+format = <label>
+format-prefix = 
+format-prefix-background = ${colors.yellowLight}
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-padding = 1
+
+label-warn = %temperature-c%
+label-warn-background = ${colors.background-alt}
+label-warn-foreground = ${colors.foreground-alt}
+label-warn-padding = 1
+
+format-warn = <label-warn>
+format-warn-prefix = 
+format-warn-prefix-background = ${colors.yellowLight}
+format-warn-prefix-foreground = ${colors.foreground-alt}
+format-warn-prefix-padding = 1

@@ -182,7 +182,7 @@ assign [class="^Signal$"] $ws4
 for_window [class="^Signal$"] floating enable
 assign [class="Slack"] $ws4
 for_window [class="Slack"] floating enable
-for_window [class="Spotify"] floating enable, move window to workspace $ws5
+for_window [class="Spotify"] floating enable, move to workspace $ws5
 
 gaps inner 4
 gaps outer 4

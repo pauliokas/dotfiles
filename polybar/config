@@ -39,7 +39,7 @@ border-bottom-color = ${self.background}
 
 modules-left = i3
 modules-center = 
-modules-right = wireless-network backlight pulseaudio battery date
+modules-right = keyboard wireless-network backlight pulseaudio battery date
 
 font-0 = "Monospace:size=10:antialias=false;2"
 font-1 = "FontAwesome:size=10:style=solid;2"
@@ -218,3 +218,17 @@ format-muted-prefix-background = ${colors.blueLight}
 format-muted-prefix-foreground = ${colors.foreground-alt}
 format-muted-prefix-padding = 1
 
+[module/keyboard]
+type = internal/xkeyboard
+
+format = <label-layout>
+
+label-layout = %layout%
+label-layout-background = ${colors.background-alt}
+label-layout-foreground = ${colors.foreground-alt}
+label-layout-padding = 1
+
+format-prefix = 
+format-prefix-background = ${colors.cyanLight}
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-padding = 1

@@ -22,6 +22,7 @@
     ~/.config/i3: i3
     ~/.config/polybar: polybar
     ~/.config/redshift: redshift
+    ~/.config/rofi: rofi
 
 - shell:
     - command: git submodule update --init --recursive

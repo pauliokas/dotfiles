@@ -40,7 +40,7 @@ bindsym $mod+Return exec urxvt -e zsh -c tmux
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi -show combi
 
 # change focus
 bindsym $mod+$key_left  focus left

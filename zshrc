@@ -29,6 +29,7 @@ source ~/.zsh/user/fasd.zsh
 source ~/.zsh/user/fzf.zsh
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source ~/.zsh/user/colors.zsh
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search

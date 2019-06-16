@@ -1,10 +1,8 @@
 URxvt.loginShell: true
 
-URxvt.depth: 32
-
 ! Fonts
 URxvt.font: xft:Monospace:style=regular:pixelsize=18
-URxvt.boldFont:
+URxvt.boldFont: xft:Monospace:style=bold:pixelsize=18
 
 ! Scrollbar
 URxvt.scrollBar: false
@@ -13,45 +11,4 @@ URxvt.scrollBar: false
 URxvt.perl-ext-common:      default,matcher
 URxvt.url-launcher:         xdg-open
 
-#define cBlackDark    #2e3436
-#define cBlackLight   #555753
-#define cRedDark      #cc0000
-#define cRedLight     #ef2929
-#define cGreenDark    #4e9a06
-#define cGreenLight   #8ae234
-#define cYellowDark   #c4a000
-#define cYellowLight  #fce94f
-#define cBlueDark     #3465a4
-#define cBlueLight    #729fcf
-#define cMagentaDark  #75507b
-#define cMagentaLight #ad7fa8
-#define cCyanDark     #06989a
-#define cCyanLight    #34e2e2
-#define cWhiteDark    #d3d7cf
-#define cWhiteLight   #eeeeec
-
-*color0: cBlackDark
-*color8: cBlackLight
-*color1: cRedDark
-*color9: cRedLight
-*color2: cGreenDark
-*color10: cGreenLight
-*color3: cYellowDark
-*color11: cYellowLight
-*color4: cBlueDark
-*color12: cBlueLight
-*color5: cMagentaDark
-*color13: cMagentaLight
-*color6: cCyanDark
-*color14: cCyanLight
-*color7: cWhiteDark
-*color15: cWhiteLight
-
-URxvt.cursorBlink: true
-URxvt.cursorColor: cWhiteDark
-
-URxvt.background: [90]cBlackDark
-URxvt.foreground: cWhiteDark
-
-URxvt.fading: 15
-URxvt.fadeColor: [90]cBlackLight
+#include ".cache/wal/colors.Xresources"

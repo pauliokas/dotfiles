@@ -17,6 +17,7 @@
     ~/.xinitrc:
     ~/.Xresources:
     ~/.xsession:
+    ~/.cache/wal: wal
     ~/.config/bat: bat
     ~/.config/dunst: dunst
     ~/.config/i3: i3

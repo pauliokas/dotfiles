@@ -4,6 +4,5 @@ rofi.case-sensitive: false
 rofi.combi-modi: drun,window,run
 rofi.font: monospace 12
 rofi.modi: drun,window,run,combi
-rofi.theme: Adapta-Nokto
-! "Set the matching algorithm. (normal, regex, glob, fuzzy)" Set from: Default
-! rofi.matching:                       normal
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.matching: fuzzy

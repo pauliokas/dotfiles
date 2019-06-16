@@ -21,7 +21,6 @@ set_from_resource $cCyanDark      i3wm.color6   #000000
 set_from_resource $cCyanLight     i3wm.color14  #000000
 set_from_resource $cWhiteDark     i3wm.color7   #000000
 set_from_resource $cWhiteLight    i3wm.color15  #000000
-set $transparent #00000099
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -94,7 +93,7 @@ set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
-set $ws6 "6"
+set $ws6 "6:"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -158,11 +157,11 @@ mode "resize" {
 set $mode_power "[L]ock, [S]uspend, [P]owerOff, [R]eboot, [E]xit"
 bindsym $mod+Escape mode $mode_power
 mode $mode_power {
-  bindsym s mode "default"; exec --no-startup-id systemctl suspend
+  bindsym s mode "default"; exec --no-startup-id "lock_screen && systemctl suspend"
   bindsym p mode "default"; exec --no-startup-id systemctl poweroff
   bindsym r mode "default"; exec --no-startup-id systemctl reboot
   bindsym e mode "default"; exec i3-msg exit
-  bindsym l mode "default"; exec --no-startup-id gllock
+  bindsym l mode "default"; exec --no-startup-id lock_screen
   
   bindsym Return mode "default"
   bindsym Escape mode "default"
@@ -183,6 +182,16 @@ for_window [class="^Signal$"] floating enable
 assign [class="Slack"] $ws4
 for_window [class="Slack"] floating enable
 for_window [class="Spotify"] floating enable, move to workspace $ws5
+assign [class="Thunderbird"] $ws6
 
 gaps inner 4
 gaps outer 4
+
+# class                 border        background    text          indicator     child_border
+client.focused          $cBlackDark   $cBlackLight  $cWhiteLight  $cYellowDark  $cBlackLight
+client.focused_inactive $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
+client.unfocused        $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
+client.urgent           $cRedDark     $cRedLight    $cWhiteLight  $cYellowDark  $cRedDark
+client.placeholder      $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
+
+client.background       $cWhiteLight

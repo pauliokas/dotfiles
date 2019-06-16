@@ -21,10 +21,11 @@ cyanLight = ${xrdb:polybar.color14:#000000}
 whiteDark = ${xrdb:polybar.color7:#000000}
 whiteLight = ${xrdb:polybar.color15:#000000}
 
-background = ${self.blackDark}
-background-alt = ${self.whiteDark}
-foreground = ${self.whiteDark}
-foreground-alt = ${self.blackDark}
+background = ${xrdb:polybar.background:#000000}
+background-alt = ${self.blackLight}
+foreground = ${xrdb:polybar.foreground:#000000}
+foreground-alt = ${self.whiteLight}
+icon = ${self.background}
 alert = ${self.redDark}
 
 [bar/top]
@@ -64,7 +65,7 @@ format = <label>
 
 format-prefix = 
 format-prefix-background = ${colors.yellowLight}
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.icon}
 format-prefix-padding = 1
 
 label = %percentage:3%%
@@ -87,7 +88,7 @@ label-full-padding = 1
 
 format-full-prefix = 
 format-full-prefix-background = ${colors.magentaLight}
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-foreground = ${colors.icon}
 format-full-prefix-padding = 1
 
 format-discharging = <label-discharging>
@@ -99,7 +100,7 @@ label-discharging-padding = 1
 
 format-discharging-prefix = 
 format-discharging-prefix-background = ${colors.magentaLight}
-format-discharging-prefix-foreground = ${colors.foreground-alt}
+format-discharging-prefix-foreground = ${colors.icon}
 format-discharging-prefix-padding = 1
 
 format-charging = <label-charging>
@@ -111,7 +112,7 @@ label-charging-padding = 1
 
 format-charging-prefix = 
 format-charging-prefix-background = ${colors.magentaLight}
-format-charging-prefix-foreground = ${colors.foreground-alt}
+format-charging-prefix-foreground = ${colors.icon}
 format-charging-prefix-padding = 1
 
 [module/date]
@@ -126,7 +127,7 @@ format = <label>
 
 format-prefix = 
 format-prefix-background = ${colors.greenLight}
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.icon}
 format-prefix-padding = 1
 
 label = %time%
@@ -149,7 +150,7 @@ label-connected-padding = 1
 
 format-connected-prefix = 
 format-connected-prefix-background = ${colors.redLight}
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${colors.icon}
 format-connected-prefix-padding = 1
 
 [module/i3]
@@ -175,7 +176,7 @@ label-focused-padding = ${self.padding}
 
 label-unfocused = %name%
 label-unfocused-background = ${colors.background-alt}
-label-unfocused-foreground = ${colors.foreground-alt}
+label-unfocused-foreground = ${colors.foreground}
 label-unfocused-padding = ${self.padding}
 
 label-visible = %name%
@@ -185,7 +186,7 @@ label-visible-padding = ${self.padding}
 
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
-label-urgent-foreground = ${colors.foreground}
+label-urgent-foreground = ${colors.foreground-alt}
 label-urgent-padding = ${self.padding}
 
 [module/pulseaudio]
@@ -203,7 +204,7 @@ format-volume = <label-volume>
 
 format-volume-prefix = 
 format-volume-prefix-background = ${colors.blueLight}
-format-volume-prefix-foreground = ${colors.foreground-alt}
+format-volume-prefix-foreground = ${colors.icon}
 format-volume-prefix-padding = 1
 
 label-muted = %percentage:3%%
@@ -215,7 +216,7 @@ format-muted = <label-muted>
 
 format-muted-prefix = 
 format-muted-prefix-background = ${colors.blueLight}
-format-muted-prefix-foreground = ${colors.foreground-alt}
+format-muted-prefix-foreground = ${colors.icon}
 format-muted-prefix-padding = 1
 
 [module/keyboard]
@@ -230,7 +231,7 @@ label-layout-padding = 1
 
 format-prefix = 
 format-prefix-background = ${colors.cyanLight}
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.icon}
 format-prefix-padding = 1
 
 [module/temperature]
@@ -248,7 +249,7 @@ label-padding = 1
 format = <label>
 format-prefix = 
 format-prefix-background = ${colors.yellowLight}
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.icon}
 format-prefix-padding = 1
 
 label-warn = %temperature-c%
@@ -259,5 +260,5 @@ label-warn-padding = 1
 format-warn = <label-warn>
 format-warn-prefix = 
 format-warn-prefix-background = ${colors.yellowLight}
-format-warn-prefix-foreground = ${colors.foreground-alt}
+format-warn-prefix-foreground = ${colors.icon}
 format-warn-prefix-padding = 1

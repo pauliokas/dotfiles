@@ -195,3 +195,6 @@ client.urgent           $cRedDark     $cRedLight    $cWhiteLight  $cYellowDark  
 client.placeholder      $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
 
 client.background       $cWhiteLight
+
+default_border pixel
+default_floating_border pixel

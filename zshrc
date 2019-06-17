@@ -20,6 +20,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/oh-my-zsh/plugins/gradle/gradle.plugin.zsh
 source ~/.zsh/oh-my-zsh/plugins/docker-compose/docker-compose.plugin.zsh
 source ~/.zsh/oh-my-zsh/plugins/yarn/yarn.plugin.zsh
+source ~/.zsh/user/ssh-agent.zsh
 source ~/.zsh/user/env.zsh
 source ~/.zsh/user/aliases.zsh
 source ~/.zsh/user/prompt.zsh

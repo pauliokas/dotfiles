@@ -188,9 +188,9 @@ gaps inner 4
 gaps outer 4
 
 # class                 border        background    text          indicator     child_border
-client.focused          $cBlackDark   $cBlackLight  $cWhiteLight  $cYellowDark  $cBlackLight
-client.focused_inactive $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
-client.unfocused        $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
+client.focused          $cBlackDark   $cBlackLight  $cWhiteLight  $cYellowDark  $cBlueLight
+client.focused_inactive $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cBlackLight
+client.unfocused        $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cBlackLight
 client.urgent           $cRedDark     $cRedLight    $cWhiteLight  $cYellowDark  $cRedDark
 client.placeholder      $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
 

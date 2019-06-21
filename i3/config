@@ -157,11 +157,11 @@ mode "resize" {
 set $mode_power "[L]ock, [S]uspend, [P]owerOff, [R]eboot, [E]xit"
 bindsym $mod+Escape mode $mode_power
 mode $mode_power {
-  bindsym s mode "default"; exec --no-startup-id "lock_screen && systemctl suspend"
+  bindsym s mode "default"; exec --no-startup-id systemctl suspend
   bindsym p mode "default"; exec --no-startup-id systemctl poweroff
   bindsym r mode "default"; exec --no-startup-id systemctl reboot
   bindsym e mode "default"; exec i3-msg exit
-  bindsym l mode "default"; exec --no-startup-id lock_screen
+  bindsym l mode "default"; exec --no-startup-id dm-tool lock
   
   bindsym Return mode "default"
   bindsym Escape mode "default"
@@ -184,17 +184,22 @@ for_window [class="Slack"] floating enable
 for_window [class="Spotify"] floating enable, move to workspace $ws5
 assign [class="Thunderbird"] $ws6
 
-gaps inner 4
-gaps outer 4
-
 # class                 border        background    text          indicator     child_border
 client.focused          $cBlackDark   $cBlackLight  $cWhiteLight  $cYellowDark  $cBlueLight
-client.focused_inactive $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cBlackLight
-client.unfocused        $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cBlackLight
+client.focused_inactive $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  #00000000
+client.unfocused        $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  #00000000
 client.urgent           $cRedDark     $cRedLight    $cWhiteLight  $cYellowDark  $cRedDark
 client.placeholder      $cWhiteDark   $cWhiteDark   $cBlackLight  $cYellowDark  $cWhiteDark
 
 client.background       $cWhiteLight
 
+gaps inner 4
+gaps outer 4
+
 default_border pixel
 default_floating_border pixel
+
+smart_borders on
+
+#bindsym $mod+y fullscreen disable; floating enable; resize set 600 400; sticky enable; move window to position 1940 54
+#bindsym $mod+y sticky disable

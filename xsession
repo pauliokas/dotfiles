@@ -1,8 +1,8 @@
 # Turn off DPMS
-xset dpms off
+xset -dpms
 
 # Disable bell
-xset b off
+xset -b
 
 # Disable screensaver
 xset s off

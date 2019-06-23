@@ -14,16 +14,16 @@
     ~/.zshenv:
     ~/.vim:
     ~/.tmux.conf:
-    ~/.xinitrc:
     ~/.Xresources:
     ~/.xsession:
     ~/.cache/wal: wal
     ~/.config/bat: bat
+    ~/.config/bspwm: bspwm
     ~/.config/dunst: dunst
-    ~/.config/i3: i3
     ~/.config/polybar: polybar
     ~/.config/redshift: redshift
     ~/.config/rofi: rofi
+    ~/.config/sxhkd: sxhkd
 
 - shell:
     - command: git submodule update --init --recursive

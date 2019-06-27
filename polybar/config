@@ -140,7 +140,7 @@ ws-icon-8 = 9;9
 ws-icon-9 = 0;10
 ws-icon-default = 
 
-padding = 1
+padding = 2
 
 label-padding-right = ${self.padding}
 
@@ -150,6 +150,7 @@ label-focused-padding = ${self.padding}
 label-focused-overline = ${colors.accent}
 
 label-urgent = %icon%
+label-urgent-foreground = ${colors.alert}
 label-urgent-padding = ${self.padding}
 label-urgent-overline = ${colors.alert}
 

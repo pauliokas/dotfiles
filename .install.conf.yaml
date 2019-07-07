@@ -15,7 +15,8 @@
     ~/.vim:
     ~/.tmux.conf:
     ~/.Xresources:
-    ~/.xsession:
+    ~/.xinitrc:
+    ~/.zprofile:
     ~/.cache/wal: wal
     ~/.config/bat: bat
     ~/.config/bspwm: bspwm

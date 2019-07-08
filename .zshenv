@@ -1,1 +1,1 @@
-source ~/.zsh/user/fzf_preview.zsh
+source ~/.zsh.d/scripts/fzf_preview.zsh

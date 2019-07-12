@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source ~/.zsh/zsh-git-prompt/zshrc.sh
+source ~/.zsh.d/zsh-git-prompt/zshrc.sh
 
 cd $1
 

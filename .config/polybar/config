@@ -27,7 +27,7 @@ foreground = ${xrdb:polybar.foreground:#000000}
 foreground-alt = ${self.whiteLight}
 icon = ${self.background}
 alert = ${self.redDark}
-accent = ${self.magentaLight}
+accent = ${self.greenLight}
 
 [bar/top]
 width = 100%
@@ -44,7 +44,7 @@ line-size = 2
 
 modules-left = bspwm
 modules-center = 
-modules-right = keyboard temperature wifi backlight pulseaudio battery date
+modules-right = keyboard temperature wifi backlight pulseaudio battery date mute-notifications
 
 font-0 = "Sans:size=11;1"
 font-1 = "FontAwesome:size=12:style=solid;3"
@@ -211,3 +211,12 @@ format-warn = <label-warn>
 format-warn-prefix = 
 format-warn-prefix-padding-right = 1
 format-warn-prefix-overline = ${colors.alert}
+
+[module/mute-notifications]
+type = custom/script
+
+exec = "$HOME/.config/polybar/mute-notifications.sh"
+
+tail = true
+
+click-left = "kill -USR1 %pid%"

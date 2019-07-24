@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt -e zsh -c tmux
+	urxvt
 
 # program launcher
 super + @space
@@ -25,7 +25,7 @@ XF86MonBrightnessUp
 	xf86 brightness up
 
 super + Escape ; {l,s,p,r}
-	{locksession,systemctl suspend,systemctl poweroff,systemctl reboot}
+	{betterlockscreen --lock dimblur,systemctl suspend,systemctl poweroff,systemctl reboot}
 
 Print
 	mkdir -p ~/Pictures/screenshots; maim --format=png > ~/Pictures/screenshots/$(date -Iseconds).png

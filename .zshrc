@@ -4,4 +4,3 @@ if [[ -d "$HOME/.zsh.d" ]]; then
   done
   unset f
 fi
-

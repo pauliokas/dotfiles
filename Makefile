@@ -4,6 +4,7 @@ FILES := \
 	.xinitrc .Xresources \
 	.tmux.conf \
 	.gitconfig .gitignore_global \
+	.config/alacritty \
 	.config/bat \
 	.config/bspwm \
 	.config/dunst \

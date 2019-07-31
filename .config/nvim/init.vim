@@ -34,7 +34,10 @@ let g:netrw_winsize = 25
 
 "map <D-M-p> :call fzf#call({'sink': 'tabedit'})
 noremap <Leader>e :call fzf#run({'sink': 'tabedit'})<CR>
+noremap <Leader>q :nohlsearch<CR>
 
 packloadall
 silent! helptags ALL
+
+set clipboard+=unnamedplus
 

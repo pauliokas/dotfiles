@@ -26,11 +26,18 @@ function start_dunst() {
     dunst &
 }
 
+function start_redshift() {
+    killall -q redshift
+    while pgrep -u $UID -x redshift >/dev/null; do sleep .5; done
+    redshift &
+}
+
 start_sxhkd
 start_compton
 start_feh
 start_polybar
 start_dunst
+start_redshift
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 

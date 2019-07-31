@@ -22,13 +22,18 @@ TARGETS := $(addprefix $(HOME)/,$(FILES))
 .PHONY: all make_targets update_submodules
 
 all: update_submodules make_targets
+	@printf 'Building bat cache... '
+	@bat cache --build >/dev/null
+	@printf 'OK\n'
 
 make_targets: $(TARGETS)
 
 update_submodules:
-	@echo 'Updating submodules...'
-	@git submodule update --init --recursive
+	@printf 'Updating submodules... '
+	@git submodule update --init --recursive >/dev/null
+	@printf 'OK\n'
 
 $(HOME)/%: $(DIR)/%
-	@[ -e $@ ] && [ "$(shell readlink $@)" != "$<" ] && echo "File already exists, but is not a link: $@" || true
-	@[ ! -e $@ ] && ln -s $< $@ && echo "File linked: $@" || true
+	@[ -L "$@" ] && [ "$(shell readlink $@)" != "$<" ] && echo "Link exists, but with a wrong target: $@" || true
+	@[ -e "$@" ] && [ ! -L "$@" ] && echo "File exists, but is not a link: $@" || true
+	@[ ! -e "$@" ] && ln -s "$<" "$@" && echo "File linked: $@" || true

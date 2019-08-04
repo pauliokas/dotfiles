@@ -51,5 +51,7 @@ bspc rule --add firefox desktop=^1 state=floating
 bspc rule --add code-oss desktop=^2
 bspc rule --add Slack desktop=^4 state=floating
 bspc rule --add Signal desktop=^4 state=floating
-# bspc rule --add Spotify desktop=^5 state=floating
+bspc rule --add Spotify desktop=^5 state=floating
 bspc rule --add Thunderbird desktop=^6
+bspc rule --add Lutris state=floating
+bspc rule --add Steam state=floating

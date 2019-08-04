@@ -10,6 +10,7 @@ FILES := \
 	.config/dunst \
 	.config/nvim \
 	.config/polybar \
+	.config/ranger \
 	.config/redshift \
 	.config/rofi \
 	.config/sxhkd \

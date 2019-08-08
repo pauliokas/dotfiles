@@ -23,7 +23,6 @@ function toggle() {
     print_status
 }
 
-trap cleanup EXIT
 trap toggle USR1
 
 while true

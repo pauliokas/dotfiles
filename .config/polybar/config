@@ -44,7 +44,7 @@ line-size = 2
 
 modules-left = bspwm
 modules-center = 
-modules-right = updates keyboard temperature wifi pulseaudio battery date mute-notifications
+modules-right = updates keyboard temperature wifi brightness volume battery date mute-notifications
 
 font-0 = "Sans:size=11;1"
 font-1 = "FontAwesome:size=12:style=solid;3"
@@ -149,7 +149,7 @@ label-empty-padding = ${self.padding}
 label-occupied = %icon%
 label-occupied-padding = ${self.padding}
 
-[module/pulseaudio]
+[module/volume]
 type = internal/pulseaudio
 
 use-ui-max = true
@@ -220,3 +220,16 @@ interval = 60
 format-prefix = 
 format-prefix-padding-right = 1
 format-prefix-overline = ${colors.alert}
+
+[module/brightness]
+type = custom/script
+
+exec = "$HOME/.config/polybar/brightness.sh"
+
+scroll-up = "$HOME/.config/polybar/brightness.sh up"
+scroll-down = "$HOME/.config/polybar/brightness.sh down"
+
+interval = 1
+
+format-prefix = 
+format-prefix-padding-right = 1

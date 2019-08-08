@@ -215,7 +215,7 @@ type = custom/script
 
 exec = "$HOME/.config/polybar/checkupdates.sh"
 
-interval = 600
+interval = 60
 
 format-prefix = 
 format-prefix-padding-right = 1

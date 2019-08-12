@@ -8,6 +8,7 @@ FILES := \
 	.config/bat \
 	.config/bspwm \
 	.config/dunst \
+	.config/fontconfig \
 	.config/nvim \
 	.config/polybar \
 	.config/ranger \

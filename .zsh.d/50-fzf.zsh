@@ -1,8 +1,7 @@
 export FZF_CTRL_T_OPTS="--preview '_fzf_preview {}'"
 export FZF_TMUX=1
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source /etc/profile.d/fzf.zsh
 
 function _is_git_repo() {
     git rev-parse HEAD >/dev/null 2>&1

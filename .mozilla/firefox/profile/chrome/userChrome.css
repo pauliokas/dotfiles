@@ -1,4 +1,0 @@
-:root:not([customizing]) #urlbar {
-	background-color: rgba(255, 255, 255, .5) !important;
-	transition: all 100ms !important;
-}

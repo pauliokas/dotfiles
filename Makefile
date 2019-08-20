@@ -17,7 +17,6 @@ FILES := \
 	.config/sxhkd \
 	.config/compton.conf \
 	.cache/wal \
-	.mozilla/firefox/profile/chrome/userChrome.css \
 	.profile \
 
 SOURCES := $(addprefix $(DIR)/,$(FILES))

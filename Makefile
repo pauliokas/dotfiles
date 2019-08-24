@@ -34,6 +34,7 @@ make_targets: $(TARGETS)
 update_submodules:
 	@printf 'Updating submodules... '
 	@git submodule update --init --recursive >/dev/null
+	@git submodule update --recursive --remote >/dev/null
 	@printf 'OK\n'
 
 $(HOME)/%: $(DIR)/%

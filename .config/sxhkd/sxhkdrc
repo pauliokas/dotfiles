@@ -25,7 +25,7 @@ XF86MonBrightnessUp
 	xf86 brightness up
 
 super + Escape ; {l,s,p,r}
-	{loginctl lock-session,systemctl suspend-then-hibernate,systemctl poweroff,systemctl reboot}
+	{loginctl lock-session,systemctl suspend,systemctl poweroff,systemctl reboot}
 
 Print
 	mkdir -p ~/Pictures/screenshots; maim --format=png > ~/Pictures/screenshots/$(date -Iseconds).png

@@ -1,15 +1,15 @@
 [submodule ".zsh.d/oh-my-zsh"]
-	path = .zsh.d/oh-my-zsh
+	path = zsh.d/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule ".zsh.d/zsh-autosuggestions"]
-	path = .zsh.d/zsh-autosuggestions
+	path = zsh.d/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule ".zsh.d/zsh-git-prompt"]
-	path = .zsh.d/zsh-git-prompt
+	path = zsh.d/zsh-git-prompt
 	url = https://github.com/starcraftman/zsh-git-prompt.git
 [submodule ".zsh.d/zsh-syntax-highlighting"]
-	path = .zsh.d/zsh-syntax-highlighting
+	path = zsh.d/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule ".zsh.d/zsh-sensible"]
-	path = .zsh.d/zsh-sensible
+	path = zsh.d/zsh-sensible
 	url = https://github.com/hanjianwei/zsh-sensible.git

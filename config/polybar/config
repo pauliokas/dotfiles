@@ -221,6 +221,8 @@ format-prefix = 
 format-prefix-padding-right = 1
 format-prefix-overline = ${colors.alert}
 
+click-left = "kitty $HOME/.config/polybar/update.sh"
+
 [module/brightness]
 type = custom/script
 

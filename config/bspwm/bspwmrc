@@ -3,47 +3,47 @@
 function start_polybar() {
     killall -q polybar
     while pgrep -u $UID -x polybar >/dev/null; do sleep .5; done
-    polybar top &
+    polybar top
 }
 
 function start_sxhkd() {
     killall -q sxhkd
-    sxhkd &
+    sxhkd
 }
 
 function start_feh() {
     killall -q feh
-    feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/punch-bowl-falls.jpg &
+    feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/punch-bowl-falls.jpg
 }
 
 function start_compton() {
     killall -q compton
-    compton &
+    compton
 }
 
 function start_dunst() {
     killall -q dunst
-    dunst &
+    dunst
 }
 
 function start_redshift() {
     killall -q redshift
     while pgrep -u $UID -x redshift >/dev/null; do sleep .5; done
-    redshift &
+    redshift
 }
 
 function start_xsslock() {
     killall -q xss-lock
-    xss-lock -- betterlockscreen --lock &
+    xss-lock -- betterlockscreen --lock
 }
 
-start_sxhkd
-start_compton
-start_feh
-start_polybar
-start_dunst
-start_redshift
-start_xsslock
+start_sxhkd &
+start_compton &
+start_feh &
+start_polybar &
+start_dunst &
+start_redshift &
+start_xsslock &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
@@ -53,11 +53,17 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule --add firefox desktop=^1 state=floating
-bspc rule --add code-oss desktop=^2
+bspc rule --add firefox state=floating
+bspc rule --add Code desktop=^2
 bspc rule --add Slack desktop=^4 state=floating
 bspc rule --add Signal desktop=^4 state=floating
 bspc rule --add Spotify desktop=^5 state=floating
 bspc rule --add Thunderbird desktop=^6
 bspc rule --add Lutris state=floating
 bspc rule --add Steam state=floating
+bspc rule --add Pavucontrol state=floating
+
+pgrep firefox || (bspc rule --add firefox desktop=^1 --one-shot; firefox &)
+pgrep slack || slack &
+pgrep signal-desktop || signal-desktop --start-in-tray &
+pgrep spotify || spotify &

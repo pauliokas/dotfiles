@@ -7,7 +7,6 @@ FILES := \
 	config/bat \
 	config/bspwm \
 	config/dunst \
-	config/fontconfig \
 	config/kitty \
 	config/nvim \
 	config/polybar \

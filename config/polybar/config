@@ -43,8 +43,8 @@ border-bottom-color = ${colors.accent}
 line-size = 2
 
 modules-left = bspwm
-modules-center = 
-modules-right = updates keyboard temperature wifi brightness volume battery date mute-notifications
+modules-center = date
+modules-right = updates keyboard temperature wifi brightness volume battery notifications
 
 font-0 = "Sans:size=11;1"
 font-1 = "FontAwesome:size=12:style=solid;3"
@@ -58,180 +58,14 @@ tray-padding = 5
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = AC
-full-at = 78
 
-poll-interval = 5
-
-label-full = %percentage%%
-
-format-full-prefix = 
-format-full-prefix-padding-right = 1
-
-format-discharging = <label-discharging>
-
-label-discharging = %percentage%%
-
-format-discharging-prefix = 
-format-discharging-prefix-padding-right = 1
-
-format-charging = <label-charging>
-
-label-charging = %percentage%%
-
-format-charging-prefix = 
-format-charging-prefix-padding-right = 1
-
-[module/date]
-type = internal/date
-
-interval = 5.0
-
-time = %H:%M
-time-alt = %b %d, %H:%M
-
-format = <label>
-
-format-prefix = 
-format-prefix-padding-right = 1
-
-label = %time%
-
-[module/wifi]
-type = internal/network
-interface = wlp2s0
-
-interval = 3
-
-format-connected = <label-connected>
-
-label-connected = 
-
-format-disconnected = <label-disconnected>
-
-label-disconnected =
-
-[module/bspwm]
-type = internal/bspwm
-
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;7
-ws-icon-7 = 8;8
-ws-icon-8 = 9;9
-ws-icon-9 = 0;10
-ws-icon-default = 
-
-padding = 2
-
-label-padding-right = ${self.padding}
-
-label-focused = %icon%
-label-focused-foreground = ${colors.accent}
-label-focused-padding = ${self.padding}
-label-focused-overline = ${colors.accent}
-
-label-urgent = %icon%
-label-urgent-foreground = ${colors.alert}
-label-urgent-padding = ${self.padding}
-label-urgent-overline = ${colors.alert}
-
-label-empty =
-label-empty-padding = ${self.padding}
-
-label-occupied = %icon%
-label-occupied-padding = ${self.padding}
-
-[module/volume]
-type = internal/pulseaudio
-
-use-ui-max = true
-interval = 5
-
-label-volume = %percentage%%
-
-format-volume = <label-volume>
-
-format-volume-prefix = 
-format-volume-prefix-padding-right = 1
-
-label-muted = %percentage%%
-
-format-muted = <label-muted>
-
-format-muted-prefix = 
-format-muted-prefix-padding-right = 1
-
-[module/keyboard]
-type = internal/xkeyboard
-
-format = <label-layout>
-
-label-layout = %layout%
-label-layout-foreground = ${colors.foreground}
-
-format-prefix = 
-format-prefix-padding-right = 1
-
-[module/temperature]
-type = internal/temperature
-interval = 0.5
-hwmon-path = /sys/class/hwmon/hwmon1/temp1_input
-warn-temperature = 70
-units = false
-
-label = %temperature-c%
-
-format = <label>
-format-prefix = 
-format-prefix-padding-right = 1
-
-label-warn = %temperature-c%
-label-warn-overline = ${colors.alert}
-
-format-warn = <label-warn>
-format-warn-prefix = 
-format-warn-prefix-padding-right = 1
-format-warn-prefix-overline = ${colors.alert}
-
-[module/mute-notifications]
-type = custom/script
-
-exec = "$HOME/.config/polybar/mute-notifications.sh"
-
-tail = true
-
-click-left = "kill -USR1 %pid%"
-
-[module/updates]
-type = custom/script
-
-exec = "$HOME/.config/polybar/checkupdates.sh"
-
-interval = 60
-
-format-prefix = 
-format-prefix-padding-right = 1
-format-prefix-overline = ${colors.alert}
-
-click-left = "kitty $HOME/.config/polybar/update.sh &"
-
-[module/brightness]
-type = custom/script
-
-exec = "$HOME/.config/polybar/brightness.sh"
-
-scroll-up = "$HOME/.config/polybar/brightness.sh up"
-scroll-down = "$HOME/.config/polybar/brightness.sh down"
-
-interval = 1
-
-format-prefix = 
-format-prefix-padding-right = 1
+include-file = ~/.config/polybar/modules/battery.ini
+include-file = ~/.config/polybar/modules/brightness.ini
+include-file = ~/.config/polybar/modules/bspwm.ini
+include-file = ~/.config/polybar/modules/date.ini
+include-file = ~/.config/polybar/modules/keyboard.ini
+include-file = ~/.config/polybar/modules/notifications.ini
+include-file = ~/.config/polybar/modules/temperature.ini
+include-file = ~/.config/polybar/modules/updates.ini
+include-file = ~/.config/polybar/modules/volume.ini
+include-file = ~/.config/polybar/modules/wifi.ini

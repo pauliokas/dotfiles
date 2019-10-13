@@ -62,6 +62,7 @@ bspc rule --add Thunderbird desktop=^6
 bspc rule --add Lutris state=floating
 bspc rule --add Steam state=floating
 bspc rule --add Pavucontrol state=floating
+bspc rule --add kitty state=pseudo_tiled
 
 pgrep firefox || (bspc rule --add firefox desktop=^1 --one-shot; firefox &)
 pgrep slack || slack &

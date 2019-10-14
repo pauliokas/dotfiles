@@ -5,9 +5,9 @@ silent='false'
 function print_status() {
     if [[ $silent = 'true' ]]
     then
-        echo ''
+        echo ''
     else
-        echo ''
+        echo ''
     fi
 }
 

@@ -59,15 +59,12 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule --add firefox state=floating
+bspc rule --add \* state=floating
 bspc rule --add Code desktop=^2
-bspc rule --add Slack desktop=^4 state=floating
-bspc rule --add Signal desktop=^4 state=floating
-bspc rule --add Spotify desktop=^5 state=floating
+bspc rule --add Slack desktop=^4
+bspc rule --add Signal desktop=^4
+bspc rule --add Spotify desktop=^5
 bspc rule --add Thunderbird desktop=^6
-bspc rule --add Lutris state=floating
-bspc rule --add Steam state=floating
-bspc rule --add Pavucontrol state=floating
 bspc rule --add kitty state=pseudo_tiled
 
 pgrep firefox || (bspc rule --add firefox desktop=^1 --one-shot; firefox &)

@@ -28,10 +28,7 @@ super + Escape ; {l,s,p,r}
 	{loginctl lock-session,systemctl suspend,systemctl poweroff,systemctl reboot}
 
 Print
-	mkdir -p ~/Pictures/screenshots; maim --format=png > ~/Pictures/screenshots/$(date -Iseconds).png
-
-ctrl + Print
-	maim --select --format=png | xclip -sel clip -i -t image/png
+	flameshot gui
 
 #
 # bspwm hotkeys

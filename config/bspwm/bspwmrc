@@ -37,6 +37,11 @@ function start_xsslock() {
     xss-lock -- betterlockscreen --lock
 }
 
+function start_flameshot() {
+    killall -q flameshot
+    flameshot
+}
+
 start_sxhkd &
 start_compton &
 start_feh &
@@ -44,6 +49,7 @@ start_polybar &
 start_dunst &
 start_redshift &
 start_xsslock &
+start_flameshot &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 

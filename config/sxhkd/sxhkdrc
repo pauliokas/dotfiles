@@ -30,6 +30,9 @@ super + Escape ; {l,s,p,r}
 Print
 	flameshot gui
 
+shift + Print
+	peek
+
 #
 # bspwm hotkeys
 #

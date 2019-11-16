@@ -38,3 +38,6 @@
 
 [rebase]
 	autosquash = true
+
+[sequence]
+	editor = interactive-rebase-tool

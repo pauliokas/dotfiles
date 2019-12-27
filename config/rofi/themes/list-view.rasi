@@ -1,0 +1,50 @@
+* {
+    background: #292D3E;
+    foreground: #959DCB;
+
+    alt-background: #C3E88D;
+    alt-foreground: @background;
+}
+
+* {
+    transparent: rgba(0, 0, 0, 0);
+
+    background-color: @transparent;
+    text-color: @foreground;
+    font: "Monospace 16";
+}
+
+window {
+    transparency: "screenshot";
+}
+
+listview, inputbar {
+    background-color: @background;
+    border-color: @foreground;
+}
+
+inputbar {
+    children: [ entry ];
+    padding: 10 15;
+    border: 3;
+    border-radius: 5;
+}
+
+listview {
+    /* fixed-height: false; */
+    dynamic: true;
+    border: 0 1 1 1;
+    border-radius: 0 0 5 5;
+    margin: -2 10 0 10;
+    padding: 3 0 0 0;
+    columns: 1;
+}
+
+element {
+    padding: 5 10;
+}
+
+element selected {
+    background-color: @alt-background;
+    text-color: @alt-foreground;
+}

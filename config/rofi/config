@@ -1,10 +1,8 @@
 rofi.show-icons: true
 rofi.sorting-method: fzf
 rofi.case-sensitive: false
-rofi.font: Monospace 16
 rofi.combi-modi: drun,run,window
 rofi.show: combi
-rofi.modi: window,run,drun,combi
-rofi.theme: ~/.config/rofi/colors-rofi-dark.rasi
+rofi.modi: combi
+rofi.theme: themes/list-view.rasi
 rofi.matching: fuzzy
-rofi.columns: 2

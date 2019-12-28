@@ -24,8 +24,8 @@ XF86MonBrightnessDown
 XF86MonBrightnessUp
 	xf86 brightness up
 
-super + Escape ; {l,s,p,r}
-	{loginctl lock-session,systemctl suspend,systemctl poweroff,systemctl reboot}
+super + Escape
+	$HOME/.config/rofi/power_menu.sh
 
 Print
 	flameshot gui

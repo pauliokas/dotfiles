@@ -1,0 +1,31 @@
+* {
+    background: #292D3E;
+    foreground: #959DCB;
+    accent: #C3E88D;
+}
+
+* {
+    background-color: @background;
+    text-color: @foreground;
+    border-color: @foreground;
+}
+
+window {
+    anchor: center;
+}
+
+listview {
+    fixed-height: false;
+    dynamic: true;
+}
+
+element {
+    border-color: @background;
+    border: 1;
+    border-radius: 5;
+}
+
+element selected {
+    text-color: @accent;
+    border-color: @accent;
+}

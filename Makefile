@@ -10,12 +10,12 @@ FILES := \
 	config/dunst \
 	config/kitty \
 	config/nvim \
+	config/picom \
 	config/polybar \
 	config/ranger \
 	config/redshift \
 	config/rofi \
 	config/sxhkd \
-	config/compton.conf \
 	cache/wal \
 	profile \
 

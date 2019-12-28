@@ -16,9 +16,9 @@ function start_feh() {
     feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/punch-bowl-falls.jpg
 }
 
-function start_compton() {
-    killall -q compton
-    compton
+function start_picom() {
+    killall -q picom
+    picom --experimental-backends
 }
 
 function start_dunst() {
@@ -42,8 +42,15 @@ function start_flameshot() {
     flameshot
 }
 
+function autostart() {
+    pgrep firefox || (bspc rule --add firefox desktop=^1 follow=off --one-shot; firefox &)
+    pgrep slack || slack &
+    pgrep signal-desktop || signal-desktop --start-in-tray &
+    pgrep spotify || spotify &
+}
+
 start_sxhkd &
-start_compton &
+start_picom &
 start_feh &
 start_polybar &
 start_dunst &
@@ -67,7 +74,4 @@ bspc rule --add Spotify desktop=^5
 bspc rule --add Thunderbird desktop=^6
 bspc rule --add kitty state=pseudo_tiled
 
-pgrep firefox || (bspc rule --add firefox desktop=^1 --one-shot; firefox &)
-pgrep slack || slack &
-pgrep signal-desktop || signal-desktop --start-in-tray &
-pgrep spotify || spotify &
+autostart

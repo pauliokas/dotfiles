@@ -8,8 +8,8 @@ shutdown=''
 choice=$(rofi \
 	-dmenu \
 	-theme $HOME/.config/rofi/themes/tiled-view.rasi <<- END
-		$suspend
 		$lock
+		$suspend
 		$restart
 		$shutdown
 	END

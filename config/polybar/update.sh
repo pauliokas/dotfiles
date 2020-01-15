@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo -e 'News from archlinux.org:\n'
+yay -Pw
+
 echo -e 'Available updates:\n'
 checkupdates
 
@@ -13,7 +16,7 @@ fi
 case $input in
     [yY][eE][sS]|[yY])
         echo
-        yay -Syu
+        schedtool -D -e yay -Syyu
         ;;
 esac
 

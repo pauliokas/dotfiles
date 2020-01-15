@@ -7,7 +7,7 @@ function nvm() {
 
 yarn_orig="$(which yarn)"
 function yarn() {
-  if [[ -f "$(pwd)/.nvmrc" && "$(nvm version $(cat $(pwd)/.nvmrc))" != "$(nvm current)" ]]; then
+  if [ -f "$(pwd)/.nvmrc" ] && [ "$(nvm version $(cat $(pwd)/.nvmrc))" != "$(nvm current)" ]; then
     nvm use
   fi
 

@@ -6,7 +6,6 @@ FILES := \
 	gitconfig gitignore_global \
 	config/bat \
 	config/bspwm \
-	config/Dharkael \
 	config/dunst \
 	config/kitty \
 	config/nvim \

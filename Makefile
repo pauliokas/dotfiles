@@ -15,6 +15,7 @@ FILES := \
 	config/redshift \
 	config/rofi \
 	config/sxhkd \
+	config/wal \
 	cache/wal \
 	profile \
 

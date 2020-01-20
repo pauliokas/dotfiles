@@ -1,8 +1,4 @@
-* {
-    background: #292D3E;
-    foreground: #959DCB;
-    accent: #C3E88D;
-}
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
     background-color: @background;

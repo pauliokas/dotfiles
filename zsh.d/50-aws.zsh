@@ -1,1 +1,1 @@
-source /usr/bin/aws_zsh_completer.sh
+[ $(command -v aws_zsh_completer.sh >/dev/null) ] && aws_zsh_completer.sh

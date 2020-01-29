@@ -20,8 +20,17 @@ function _save_last_command_start() {
 }
 add-zsh-hook preexec _save_last_command_start
 
+function _output_hostname() {
+  if [ -z $SSH_CLIENT ]; then
+    return
+  fi
+
+  echo '%F{magenta}%m%F{yellow}:%f'
+}
+
 PROMPT=''
 PROMPT+='%(0?::%F{red}(%?%)%f) '
+PROMPT+='$(_output_hostname)'
 PROMPT+='%F{blue}%(5~:%-1~/../%2~:%~)%f '
 PROMPT+='%($((_last_command_started + 5))S:%F{red}$(( SECONDS - _last_command_started ))%F{yellow}s%f :)'
 PROMPT+='%(!:%F{red}:%F{green})%#%f '

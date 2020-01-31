@@ -17,7 +17,6 @@ FILES := \
 	config/sxhkd \
 	config/wal \
 	cache/wal \
-	profile \
 
 SOURCES := $(addprefix $(DIR)/,$(FILES))
 TARGETS := $(addprefix $(HOME)/.,$(FILES))

@@ -24,9 +24,7 @@ TARGETS := $(addprefix $(HOME)/.,$(FILES))
 .PHONY: all make_targets update_submodules
 
 all: update_submodules make_targets
-	@printf 'Building bat cache... '
-	@bat cache --build >/dev/null
-	@printf 'OK\n'
+	@$(DIR)/post_setup.sh
 
 make_targets: $(TARGETS)
 

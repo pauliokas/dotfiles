@@ -17,6 +17,7 @@ FILES := \
 	config/sxhkd \
 	config/wal \
 	cache/wal \
+	local/bin/1psw \
 
 SOURCES := $(addprefix $(DIR)/,$(FILES))
 TARGETS := $(addprefix $(HOME)/.,$(FILES))
@@ -37,4 +38,4 @@ update_submodules:
 $(HOME)/.%: $(DIR)/%
 	@[ -L "$@" ] && [ "$(shell readlink $@)" != "$<" ] && echo "Link exists, but with a wrong target: $@" || true
 	@[ -e "$@" ] && [ ! -L "$@" ] && echo "File exists, but is not a link: $@" || true
-	@[ ! -e "$@" ] && ln -s "$<" "$@" && echo "File linked: $@" || true
+	@[ ! -e "$@" ] && mkdir -p $(dir $@) && ln -s "$<" "$@" && echo "File linked: $@" || true

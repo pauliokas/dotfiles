@@ -16,6 +16,7 @@ FILES := \
 	config/rofi \
 	config/sxhkd \
 	config/wal \
+	config/yay \
 	cache/wal \
 	local/bin/1psw \
 

@@ -15,6 +15,7 @@ FILES := \
 	config/yay \
 	cache/wal \
 	local/bin/1psw \
+	local/bin/desktopctrl \
 
 SOURCES := $(addprefix $(DIR)/,$(FILES))
 TARGETS := $(addprefix $(HOME)/.,$(FILES))

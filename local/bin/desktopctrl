@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+set -o errexit -o nounset -o pipefail
+
+function die() {
+    local message="${1:-'command failed'}"
+    local exit_code="${2:-1}"
+    >&2 echo "Error: $message"
+    exit $exit_code
+}
+
+function resolve_desktop() {
+    local direction="$1"
+    [[ -z "$direction" ]] && die "direction not specified"
+    case "$direction" in
+        up|down|left|right) ;;
+        *) die "unknown direction: \"$direction\""
+    esac
+
+    local grid_cols
+    local grid_rows
+    read -r grid_cols grid_rows <<<$(xprop -root 32cccc ' $1 $2\n' _NET_DESKTOP_LAYOUT | cut -f2,3 -d' ')
+
+    local all_desktops="$(bspc query -D --names)"
+
+    local current_idx
+    local current_name
+    read -r current_idx current_name <<<$(echo "$all_desktops" | grep -n $(bspc query -D -d '.focused' --names) | tr : ' ')
+
+    local current_row="$(( ($current_idx - 1) / $grid_rows ))"
+    local current_col="$(( ($current_idx - 1) % $grid_rows ))"
+
+    local target_row="$current_row"
+    local target_col="$current_col"
+
+    case "$direction" in
+        up   ) target_row="$(( $current_row - 1 ))" ;;
+        down ) target_row="$(( $current_row + 1 ))" ;;
+        left ) target_col="$(( $current_col - 1 ))" ;;
+        right) target_col="$(( $current_col + 1 ))" ;;
+    esac
+
+    [[ $target_row -lt 0 ]] && target_row="$(( $grid_rows - 1 ))"
+    [[ $target_row -ge $grid_rows ]] && target_row=0
+    [[ $target_col -lt 0 ]] && target_col="$(( $grid_cols - 1 ))"
+    [[ $target_col -ge $grid_rows ]] && target_col=0
+
+    local target_idx="$(( $target_row * $grid_rows + $target_col + 1 ))"
+    local target_name=$(echo "$all_desktops" | tail -n+$target_idx | head -n1)
+
+    echo "$target_name"
+}
+
+function show_desktop() {
+    local target_desktop=$(resolve_desktop "$@")
+    bspc desktop --focus "^$target_desktop"
+}
+
+function move_to_desktop() {
+    local target_desktop=$(resolve_desktop "$@")
+    bspc node --to-desktop "^$target_desktop" --focus
+}
+
+while getopts "m:s:" opt; do
+    case "$opt" in
+        m) move_to_desktop $OPTARG ;;
+        s) show_desktop $OPTARG ;;
+    esac
+done

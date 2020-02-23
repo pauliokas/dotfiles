@@ -10,6 +10,7 @@ FILES := \
 	config/nvim \
 	config/picom \
 	config/ranger \
+	config/redshift \
 	config/sxhkd \
 	config/wal \
 	config/yay \

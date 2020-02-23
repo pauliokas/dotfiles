@@ -5,6 +5,11 @@ function start_sxhkd() {
     sxhkd
 }
 
+function start_redshift() {
+    killall -q redshift
+    redshift
+}
+
 function start_picom() {
     killall -q picom
     while pgrep -u $UID -x picom >/dev/null; do sleep .5; done
@@ -14,6 +19,7 @@ function start_picom() {
 source "${HOME}/.cache/wal/colors.sh"
 
 start_sxhkd &
+start_redshift &
 start_picom &
 
 xprop -root -f _NET_DESKTOP_LAYOUT 32cccc -set _NET_DESKTOP_LAYOUT 1,3,3,0

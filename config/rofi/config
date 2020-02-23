@@ -1,9 +1,0 @@
-rofi.show-icons: true
-rofi.sorting-method: fzf
-rofi.case-sensitive: false
-rofi.combi-modi: drun,run,window
-rofi.show: combi
-rofi.modi: combi
-rofi.theme: themes/list-view.rasi
-rofi.matching: fuzzy
-rofi.run-command: /home/paulius/.config/rofi/run_in_current_desktop.sh {cmd}

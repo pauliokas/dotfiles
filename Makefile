@@ -7,6 +7,7 @@ FILES := \
 	xprofile \
 	config/bat \
 	config/bspwm \
+	config/fontconfig \
 	config/kitty \
 	config/nvim \
 	config/picom \
@@ -19,6 +20,8 @@ FILES := \
 	cache/wal \
 	local/bin/1psw \
 	local/bin/desktopctrl \
+	local/bin/xf86 \
+	pam_environment \
 
 SOURCES := $(addprefix $(DIR)/,$(FILES))
 TARGETS := $(addprefix $(HOME)/.,$(FILES))

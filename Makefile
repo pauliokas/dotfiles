@@ -13,6 +13,7 @@ FILES := \
 	config/ranger \
 	config/redshift \
 	config/sxhkd \
+	config/systemd \
 	config/wal \
 	config/yay \
 	cache/wal \

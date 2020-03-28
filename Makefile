@@ -26,12 +26,12 @@ FILES := \
 SOURCES := $(addprefix $(DIR)/,$(FILES))
 TARGETS := $(addprefix $(HOME)/.,$(FILES))
 
-.PHONY: all make_targets update_submodules
+.PHONY: all links update_submodules
 
-all: update_submodules make_targets
+all: update_submodules links
 	@$(DIR)/post_setup.sh
 
-make_targets: $(TARGETS)
+links: $(TARGETS)
 
 update_submodules:
 	@printf 'Updating submodules... '

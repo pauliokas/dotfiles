@@ -1,7 +1,7 @@
 DIR := $(patsubst %/,%,$(dir $(realpath $(firstword $(MAKEFILE_LIST)))))
 FILES := \
 	zshrc zshenv zsh.d \
-	xinitrc Xresources \
+	Xresources \
 	tmux.conf \
 	gitconfig gitignore_global \
 	xprofile \
@@ -11,6 +11,7 @@ FILES := \
 	config/kitty \
 	config/nvim \
 	config/picom \
+	config/plasma-workspace \
 	config/ranger \
 	config/redshift \
 	config/sxhkd \

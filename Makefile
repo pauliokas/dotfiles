@@ -5,6 +5,7 @@ FILES := \
 	tmux.conf \
 	gitconfig gitignore_global \
 	xprofile \
+	config/autostart-scripts \
 	config/bat \
 	config/fontconfig \
 	config/kitty \

@@ -10,6 +10,7 @@ FILES := \
 	config/fontconfig \
 	config/kitty \
 	config/nvim \
+	config/psd \
 	config/ranger \
 	config/systemd \
 	config/yay \

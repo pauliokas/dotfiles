@@ -16,9 +16,33 @@ add-zsh-hook precmd _newline_before_prompt
 
 _last_command_started=0
 function _save_last_command_start() {
-  _last_command_started=$SECONDS
+  _last_command_started="$SECONDS"
+  _last_command_duration=""
 }
 add-zsh-hook preexec _save_last_command_start
+
+_last_command_duration=0
+function _save_command_duration() {
+  if [[ -z "$_last_command_started" ]]; then
+    return
+  fi
+
+  _last_command_duration="$(( SECONDS - _last_command_started ))"
+  if [[ "$_last_command_duration" -le 5 ]]; then
+    _last_command_duration=""
+  fi
+
+  unset _last_command_started
+}
+add-zsh-hook precmd _save_command_duration
+
+function _print_command_duration() {
+  if [[ -z "$_last_command_duration" ]]; then
+    return
+  fi
+
+  echo "%F{red}$_last_command_duration%F{yellow}s%f "
+}
 
 function _output_hostname() {
   if [ -z $SSH_CLIENT ]; then
@@ -29,10 +53,8 @@ function _output_hostname() {
 }
 
 PROMPT=''
-PROMPT+='%(0?::%F{red}(%?%)%f) '
 PROMPT+='$(_output_hostname)'
 PROMPT+='%F{blue}%(5~:%-1~/../%2~:%~)%f '
-PROMPT+='%($((_last_command_started + 5))S:%F{red}$(( SECONDS - _last_command_started ))%F{yellow}s%f :)'
 PROMPT+='%(!:%F{red}:%F{green})%#%f '
 
 source "${HOME}/.zsh.d/gitstatus/gitstatus.plugin.zsh"
@@ -94,4 +116,7 @@ function gitstatus_prompt_update() {
 }
 add-zsh-hook precmd gitstatus_prompt_update
 
-RPROMPT='$GITSTATUS_PROMPT'
+RPROMPT=''
+RPROMPT+='%(0?::%F{red}(%?%)%f )'
+RPROMPT+='$(_print_command_duration)'
+RPROMPT+='$GITSTATUS_PROMPT'

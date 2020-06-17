@@ -1,3 +1,5 @@
+command -v fzf >/dev/null || return
+
 export FZF_CTRL_T_OPTS="--preview '_fzf_preview {}'"
 export FZF_TMUX=1
 

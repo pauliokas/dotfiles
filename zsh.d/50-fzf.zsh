@@ -3,8 +3,16 @@ command -v fzf >/dev/null || return
 export FZF_CTRL_T_OPTS="--preview '_fzf_preview {}'"
 export FZF_TMUX=1
 
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
+case "$OSTYPE" in
+    darwin*)
+        source /usr/local/opt/fzf/shell/completion.zsh
+        source /usr/local/opt/fzf/shell/key-bindings.zsh
+        ;;
+    linux*)
+        source /usr/share/fzf/completion.zsh
+        source /usr/share/fzf/key-bindings.zsh
+        ;;
+esac
 
 function _is_git_repo() {
     git rev-parse HEAD >/dev/null 2>&1

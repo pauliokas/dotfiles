@@ -5,6 +5,8 @@ autoload -Uz add-zsh-hook
 
 setopt prompt_subst
 
+source 
+
 function _newline_before_prompt() {
   if [ -z "$_print_newline_before_prompt" ]; then
     _print_newline_before_prompt=1
@@ -50,6 +52,14 @@ function _output_hostname() {
   fi
 
   echo '%F{magenta}%m%F{yellow}:%f'
+}
+
+function _print_aws_info() {
+  if [ -z $AWS_PROFILE ]; then
+    return;
+  fi
+
+  echo "%F{magenta}aws%F{yellow}:%F{magenta}$AWS_PROFILE%f "
 }
 
 PROMPT=''
@@ -119,4 +129,5 @@ add-zsh-hook precmd gitstatus_prompt_update
 RPROMPT=''
 RPROMPT+='%(0?::%F{red}(%?%)%f )'
 RPROMPT+='$(_print_command_duration)'
+RPROMPT+='$(_print_aws_info)'
 RPROMPT+='$GITSTATUS_PROMPT'

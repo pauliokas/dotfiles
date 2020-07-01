@@ -1,1 +1,1 @@
-[ $(command -v aws_zsh_completer.sh >/dev/null) ] && aws_zsh_completer.sh
+source "$HOME/.zsh.d/oh-my-zsh/plugins/aws/aws.plugin.zsh"

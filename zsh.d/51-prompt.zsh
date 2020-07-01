@@ -5,8 +5,6 @@ autoload -Uz add-zsh-hook
 
 setopt prompt_subst
 
-source 
-
 function _newline_before_prompt() {
   if [ -z "$_print_newline_before_prompt" ]; then
     _print_newline_before_prompt=1

@@ -41,3 +41,6 @@
 
 [sequence]
 	editor = interactive-rebase-tool
+
+[rerere]
+	enabled = true

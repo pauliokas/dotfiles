@@ -13,6 +13,3 @@
 [submodule "zsh.d/gitstatus"]
 	path = zsh.d/gitstatus
 	url = https://github.com/romkatv/gitstatus.git
-[submodule "zsh.d/iterm2-website"]
-	path = zsh.d/iterm2-website
-	url = https://github.com/gnachman/iterm2-website.git

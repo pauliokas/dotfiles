@@ -15,7 +15,7 @@
 	publish = "!git push --set-upstream origin `git branch-name`"
 
 	co = checkout
-	st = status
+	st = status --short
 	br = branch
 	rmb = "!f() { git branch -D \"$1\" ; git push origin --delete \"$1\" ; } ; f"
 

@@ -41,7 +41,24 @@ function _print_command_duration() {
     return
   fi
 
-  echo "%F{red}$_last_command_duration%F{yellow}s%f "
+  readonly local hours=$(( $_last_command_duration / 3600 ))
+  readonly local minutes_total=$(( $_last_command_duration % 3600 ))
+  readonly local minutes=$(( $minutes_total / 60 ))
+  readonly local seconds=$(( $minutes_total % 60 ))
+
+  local str=""
+
+  if [ $hours -gt 0 ]; then
+    str="%F{red}$hours%F{yellow}h%f"
+  fi
+
+  if [ $minutes -gt 0 ]; then
+    str+="%F{red}$minutes%F{yellow}m%f"
+  fi
+
+  str+="%F{red}$seconds%F{yellow}s%f"
+
+  echo "$str "
 }
 
 function _output_hostname() {

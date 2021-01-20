@@ -31,6 +31,7 @@
 	ssave = "!f() { git stash save \"$@\" ; } ; f"
 
 	refresh = "!f() { git fetch && git rebase origin/master ; } ; f"
+	sw = switch
 
 [core]
 	editor = vim

@@ -10,6 +10,6 @@
 [submodule ".zsh.d/zsh-sensible"]
 	path = zsh.d/zsh-sensible
 	url = https://github.com/hanjianwei/zsh-sensible.git
-[submodule "zsh.d/gitstatus"]
-	path = zsh.d/gitstatus
-	url = https://github.com/romkatv/gitstatus.git
+[submodule "zsh.d/powerlevel10k"]
+	path = zsh.d/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

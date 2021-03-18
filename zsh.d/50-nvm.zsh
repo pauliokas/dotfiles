@@ -1,7 +1,8 @@
 export NVM_DIR="${HOME}/.nvm"
 [ ! -s "$NVM_DIR/nvm.sh" ] && return
 
-source "$NVM_DIR/nvm.sh" --no-use
+# source "$NVM_DIR/nvm.sh" --no-use
+source "$NVM_DIR/nvm.sh"
 
 # https://github.com/nvm-sh/nvm#calling-nvm-use-automatically-in-a-directory-with-a-nvmrc-file
 autoload -U add-zsh-hook

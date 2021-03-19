@@ -28,6 +28,14 @@
 [[ ! -o 'no_brace_expand' ]] || p10k_config_opts+=('no_brace_expand')
 'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
 
+function p10k-on-pre-prompt() {
+  p10k display '1'=show '2/right/*'=show '2/left/time'=hide
+}
+
+function p10k-on-post-prompt() {
+  p10k display '1'=hide '2/right/*'=hide '2/left/time'=show
+}
+
 () {
   emulate -L zsh -o extended_glob
 
@@ -57,6 +65,7 @@
     # =========================[ Line #2 ]=========================
     newline                   # \n
     # virtualenv              # python virtual environment
+    time
     prompt_char               # prompt symbol
   )
 
@@ -76,7 +85,25 @@
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_{LEFT,RIGHT}_WHITESPACE=  # no surrounding whitespace
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_SUBSEGMENT_SEPARATOR=' '  # separate segments with a space
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_SEGMENT_SEPARATOR=        # no end-of-line symbol
-  typeset -g POWERLEVEL9K_VISUAL_IDENTIFIER_EXPANSION=           # no segment icons
+
+  # Defines character set used by powerlevel10k. It's best to let `p10k configure` set it for you.
+  typeset -g POWERLEVEL9K_MODE=nerdfont-complete
+  # When set to `moderate`, some icons will have an extra space after them. This is meant to avoid
+  # icon overlap when using non-monospace fonts. When set to `none`, spaces are not added.
+  typeset -g POWERLEVEL9K_ICON_PADDING=none
+
+  # When set to true, icons appear before content on both sides of the prompt. When set
+  # to false, icons go after content. If empty or not set, icons go before content in the left
+  # prompt and after content in the right prompt.
+  #
+  # You can also override it for a specific segment:
+  #
+  #   POWERLEVEL9K_STATUS_ICON_BEFORE_CONTENT=false
+  #
+  # Or for a specific segment in specific state:
+  #
+  #   POWERLEVEL9K_DIR_NOT_WRITABLE_ICON_BEFORE_CONTENT=false
+  typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=
 
   # Add an empty line before each prompt except the first. This doesn't emulate the bug
   # in Pure that makes prompt drift down whenever you use the Alt-C binding from fzf or similar.
@@ -98,7 +125,7 @@
   # Grey Python Virtual Environment.
   typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=$grey
   # Don't show Python version.
-  typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=true
+  typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=false
   typeset -g POWERLEVEL9K_VIRTUALENV_{LEFT,RIGHT}_DELIMITER=
 
   # Blue current directory.
@@ -162,7 +189,7 @@
   # If set to true, time will update when you hit enter. This way prompts for the past
   # commands will contain the start times of their commands rather than the end times of
   # their preceding commands.
-  typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=false
+  typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=true
 
   typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|sls|serverless'
 
@@ -173,7 +200,7 @@
   #   - always:   Trim down prompt when accepting a command line.
   #   - same-dir: Trim down prompt when accepting a command line unless this is the first command
   #               typed after changing current working directory.
-  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always
+  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=off
 
   # Instant prompt mode.
   #
@@ -185,7 +212,7 @@
   #   - verbose: Enable instant prompt and print a warning when detecting console output during
   #              zsh initialization. Choose this if you've never tried instant prompt, haven't
   #              seen the warning, or if you are unsure what this all means.
-  typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
 
   # Hot reload allows you to change POWERLEVEL9K options after Powerlevel10k has been initialized.
   # For example, you can type POWERLEVEL9K_BACKGROUND=red and see your prompt turn red. Hot reload

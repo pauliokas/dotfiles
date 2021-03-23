@@ -28,14 +28,6 @@
 [[ ! -o 'no_brace_expand' ]] || p10k_config_opts+=('no_brace_expand')
 'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
 
-function p10k-on-pre-prompt() {
-  p10k display '1'=show '2/right/*'=show '2/left/time'=hide
-}
-
-function p10k-on-post-prompt() {
-  p10k display '1'=hide '2/right/*'=hide '2/left/time'=show
-}
-
 () {
   emulate -L zsh -o extended_glob
 
@@ -65,7 +57,6 @@ function p10k-on-post-prompt() {
     # =========================[ Line #2 ]=========================
     newline                   # \n
     # virtualenv              # python virtual environment
-    time
     prompt_char               # prompt symbol
   )
 
@@ -200,7 +191,7 @@ function p10k-on-post-prompt() {
   #   - always:   Trim down prompt when accepting a command line.
   #   - same-dir: Trim down prompt when accepting a command line unless this is the first command
   #               typed after changing current working directory.
-  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=off
+  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always
 
   # Instant prompt mode.
   #

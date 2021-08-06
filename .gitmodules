@@ -13,3 +13,6 @@
 [submodule "zsh.d/powerlevel10k"]
 	path = zsh.d/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "config/emacs"]
+	path = config/emacs
+	url = https://github.com/hlissner/doom-emacs.git

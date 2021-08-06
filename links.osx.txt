@@ -3,4 +3,4 @@ gitconfig
 gitignore_global
 config/bat
 config/nvim
-yabairc
+

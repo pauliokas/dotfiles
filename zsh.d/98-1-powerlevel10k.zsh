@@ -64,6 +64,7 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     aws
+    node_version
     virtualenv                # python virtual environment
     context                   # user@host
     # time                    # current time
@@ -183,6 +184,7 @@
   typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=true
 
   typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|sls|serverless'
+  typeset -g POWERLEVEL9K_NODE_VERSION_SHOW_ON_COMMAND='yarn|npm|node|nvm'
 
   # Transient prompt works similarly to the builtin transient_rprompt option. It trims down prompt
   # when accepting a command line. Supported values:

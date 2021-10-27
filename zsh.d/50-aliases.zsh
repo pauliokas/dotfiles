@@ -1,6 +1,7 @@
 command -v prettyping >/dev/null && alias ping="prettyping --nolegend"
 command -v htop >/dev/null && alias top=htop
 command -v bat >/dev/null && alias cat=bat
+command -v nvim >/dev/null && alias vi=nvim && alias vim=nvim
 
 case "$OSTYPE" in
     darwin*)

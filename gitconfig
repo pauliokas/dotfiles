@@ -34,7 +34,7 @@
 	sw = switch
 
 [core]
-	editor = vim
+	editor = vi
 	excludesfile = ~/.gitignore_global
 
 [rebase]
@@ -50,9 +50,9 @@
 	ff = only
 
 [pager]
-	log = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-	show = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-	diff = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+	log = /opt/homebrew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+	show = /opt/homebrew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+	diff = /opt/homebrew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
 
 [color "diff-highlight"]
 	oldNormal = red bold

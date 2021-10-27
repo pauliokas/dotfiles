@@ -5,8 +5,8 @@ export FZF_TMUX=1
 
 case "$OSTYPE" in
     darwin*)
-        source /usr/local/opt/fzf/shell/completion.zsh
-        source /usr/local/opt/fzf/shell/key-bindings.zsh
+        source /opt/homebrew/opt/fzf/shell/completion.zsh
+        source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
         ;;
     linux*)
         source /usr/share/fzf/completion.zsh

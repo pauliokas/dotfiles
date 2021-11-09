@@ -18,3 +18,6 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 setopt HIST_BEEP
+
+autoload -U select-word-style
+select-word-style bash

@@ -6,7 +6,7 @@
 	default = simple
 
 [alias]
-	f = fetch --tags
+	f = fetch --tags --prune
 
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 
@@ -39,6 +39,12 @@
 
 [rebase]
 	autosquash = true
+
+[merge]
+	conflictStyle = zdiff3
+
+[diff]
+	algorithm = histogram
 
 [sequence]
 	editor = interactive-rebase-tool

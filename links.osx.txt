@@ -2,7 +2,5 @@ zshrc zshenv zsh.d
 gitconfig
 gitignore_global
 config/bat
-config/doom
-config/emacs
 config/nvim
 

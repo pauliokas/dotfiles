@@ -2,5 +2,5 @@ zshrc zshenv zsh.d
 gitconfig
 gitignore_global
 config/bat
+config/direnv
 config/nvim
-

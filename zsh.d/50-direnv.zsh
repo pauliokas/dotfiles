@@ -1,3 +1,4 @@
-command -v pyenv >/dev/null || return
+(( ${+commands[direnv]} )) || return
 
+export DIRENV_LOG_FORMAT=
 eval "$(direnv hook zsh)"

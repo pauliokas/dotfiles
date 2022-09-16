@@ -36,15 +36,19 @@
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore_global
+	pager = delta
 
 [rebase]
 	autosquash = true
 
 [merge]
-	conflictStyle = zdiff3
+	conflictStyle = diff3
 
 [diff]
-	algorithm = histogram
+	colorMoved = default
+
+[interactive]
+	diffFilter = delta --color-only
 
 [sequence]
 	editor = interactive-rebase-tool
@@ -54,11 +58,6 @@
 
 [pull]
 	ff = only
-
-[pager]
-	log = /opt/homebrew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-	show = /opt/homebrew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-	diff = /opt/homebrew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
 
 [color "diff-highlight"]
 	oldNormal = red bold
@@ -73,3 +72,11 @@
 	old = red
 	new = green
 	whitespace = red reverse
+
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+
+[advice]
+	detachedHead = false

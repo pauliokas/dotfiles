@@ -19,5 +19,7 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 setopt HIST_BEEP
 
+unsetopt FLOW_CONTROL
+
 autoload -U select-word-style
 select-word-style bash

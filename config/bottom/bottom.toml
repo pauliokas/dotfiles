@@ -1,0 +1,16 @@
+color = "gruvbox"
+
+[[row]]
+    [[row.child]]
+        type="cpu"
+[[row]]
+    ratio=3
+    [[row.child]]
+        ratio=4
+        type="proc"
+    [[row.child]]
+        ratio=3
+        [[row.child.child]]
+            type="mem"
+        [[row.child.child]]
+            type="net"

@@ -1,5 +1,3 @@
-strict_env
-
 use_nvm() {
   local nvmsh="$HOME/.nvm/nvm.sh"
   if [ -e $nvmsh ]; then

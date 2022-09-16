@@ -1,7 +1,11 @@
 zshrc zshenv zsh.d
 fasdrc
+asdfrc
 gitconfig
 gitignore_global
 config/bat
+config/bottom
 config/direnv
+config/lsd
 config/nvim
+tool-versions

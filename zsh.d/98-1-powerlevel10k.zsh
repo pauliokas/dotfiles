@@ -64,8 +64,7 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     aws
-    node_version
-    virtualenv                # python virtual environment
+    asdf
     context                   # user@host
     direnv
     # time                    # current time
@@ -141,7 +140,7 @@
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=$yellow
 
   # nvm
-  typeset -g POWERLEVEL9K_NVM_FOREGROUND=$grey
+  typeset -g POWERLEVEL9K_ASDF_FOREGROUND=$grey
 
   # Grey Git prompt. This makes stale prompts indistinguishable from up-to-date ones.
   typeset -g POWERLEVEL9K_VCS_FOREGROUND=$grey
@@ -185,7 +184,7 @@
   typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=true
 
   typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|sls|serverless'
-  typeset -g POWERLEVEL9K_NODE_VERSION_SHOW_ON_COMMAND='yarn|npm|node|nvm'
+  typeset -g POWERLEVEL9K_AWS_CONTENT_EXPANSION='${P9K_AWS_PROFILE//\%/%%}${P9K_AWS_REGION:+ ${P9K_AWS_REGION//\%/%%}}'
 
   # Transient prompt works similarly to the builtin transient_rprompt option. It trims down prompt
   # when accepting a command line. Supported values:

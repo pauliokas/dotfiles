@@ -1,1 +1,2 @@
-source ${HOME}/.zsh.d/scripts/fzf_preview.zsh
+export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
+source "$ZDOTDIR/.zshenv"

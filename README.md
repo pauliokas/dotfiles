@@ -2,4 +2,4 @@
 
 ## Setup
 
-Just run `make` to symlink the dotfiles.
+Just run `./setup.sh` to symlink the dotfiles.

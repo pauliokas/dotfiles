@@ -1,1 +1,0 @@
-_FASD_DATA="${XDG_CONFIG_CACHE:-$HOME/.cache/fasd/data}"

@@ -1,5 +1,3 @@
-set runtimepath+=~/.zsh/fzf
-
 syntax on
 set background=dark
 
@@ -32,12 +30,13 @@ let g:netrw_browse_split = 3
 "let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
-"map <D-M-p> :call fzf#call({'sink': 'tabedit'})
-noremap <Leader>e :call fzf#run({'sink': 'tabedit'})<CR>
 noremap <Leader>q :nohlsearch<CR>
 
 packloadall
 silent! helptags ALL
 
 set clipboard+=unnamedplus
+
+noremap <M-Up> :move -2<CR>
+noremap <M-Down> :move +1<CR>
 

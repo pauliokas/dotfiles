@@ -1,2 +1,2 @@
 /.vscode/
-/zsh.d/*.secret.zsh
+/config/zsh/plugins/**/*.secret.zsh

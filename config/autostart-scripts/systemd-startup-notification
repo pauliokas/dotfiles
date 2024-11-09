@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-failed_units="$(systemctl --failed | tail -n+2 | head -n-6 | cut -d' ' -f2,6-)"
-
-[[ -z $failed_units ]] && exit 0
-
-notify-send --urgency=critical 'systemd failure' "$failed_units"
-

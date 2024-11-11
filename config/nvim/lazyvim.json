@@ -1,0 +1,19 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.dap.core",
+    "lazyvim.plugins.extras.formatting.black",
+    "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.json",
+    "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.linting.eslint",
+    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.ai.copilot"
+  ],
+  "news": {
+    "NEWS.md": "7107"
+  },
+  "version": 7
+}

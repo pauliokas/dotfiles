@@ -6,4 +6,5 @@ config/gh
 config/git
 config/lsd
 config/nvim
+config/tmux
 digrc

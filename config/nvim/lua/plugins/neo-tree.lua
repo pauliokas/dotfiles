@@ -7,10 +7,10 @@ return {
     "MunifTanjim/nui.nvim",
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
-  opts = {
-    close_if_last_window = true,
-  },
   config = function()
-    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left toggle<CR>')
+    require("neo-tree").setup({
+      close_if_last_window = true,
+    })
+    vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left toggle<CR>', { silent = true })
   end
 }

@@ -1,8 +1,12 @@
 return {
   {
     "williamboman/mason.nvim",
-    opts = {},
+    build = ":MasonUpdate",
+    config = function(_, opts)
+      require("mason").setup(opts)
+    end
   },
+
   {
     "williamboman/mason-lspconfig.nvim",
     dependencies = {
@@ -12,6 +16,7 @@ return {
       automatic_installation = true,
     },
   },
+
   {
     "neovim/nvim-lspconfig",
     dependencies = {

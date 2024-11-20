@@ -12,13 +12,13 @@ return {
 				null_ls.builtins.formatting.stylua,
 
         -- typescript
-        require("none-ls.code_actions.eslint_d"),
-        require("none-ls.diagnostics.eslint_d"),
-        require("none-ls.formatting.eslint_d"),
+        -- require("none-ls.code_actions.eslint_d"),
+        -- require("none-ls.diagnostics.eslint_d"),
+        -- require("none-ls.formatting.eslint_d"),
 				--null_ls.builtins.formatting.prettier,
 
         -- python
-        require("none-ls.diagnostics.flake8"),
+        -- require("none-ls.diagnostics.flake8"),
 				--null_ls.builtins.diagnostics.flake8,
 				--null_ls.builtins.diagnostics.mypy,
 				--null_ls.builtins.formatter.black,

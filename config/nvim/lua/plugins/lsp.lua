@@ -4,7 +4,7 @@ return {
     build = ":MasonUpdate",
     config = function(_, opts)
       require("mason").setup(opts)
-    end
+    end,
   },
 
   {
@@ -14,6 +14,21 @@ return {
     },
     opts = {
       automatic_installation = true,
+
+      ensure_installed = {
+        "jsonls",
+        "lua_ls",
+        "pylsp",
+        "terraformls",
+        "ts_ls",
+      },
+
+      -- handlers = {
+      --   function (server_name)
+      --     local capabilities = require('blink.cmp').get_lsp_capabilities()
+      --     require('lspconfig')[server_name].setup({ capabilities = capabilities })
+      --   end,
+      -- },
     },
   },
 
@@ -22,40 +37,18 @@ return {
     dependencies = {
       "williamboman/mason-lspconfig.nvim",
       "kevinhwang91/nvim-ufo",
+      "saghen/blink.cmp",
     },
-    config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      capabilities.textDocument.foldingRange = {
-        dynamicRegistration = false,
-        lineFoldingOnly = true
-      }
-
-      local lspconfig = require("lspconfig")
-
-      local language_servers = lspconfig.util.available_servers()
-      for _, ls in ipairs(language_servers) do
-        lspconfig[ls].setup({
-          capabilities = capabilities
-        })
-      end
-
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-      vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
-    end
-  },
-
-  {
-    "kevinhwang91/nvim-ufo",
-    dependencies = "kevinhwang91/promise-async",
-    config = function ()
-      require("ufo").setup({
-        close_fold_kinds_for_ft = {
-          default = {'imports'},
-        }
+    config = function(_, opts)
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
+      require("mason-lspconfig").setup_handlers({
+        function (server_name)
+          require("lspconfig")[server_name].setup({ capabilities = capabilities })
+        end
       })
 
-      vim.o.foldcolumn = "1"
+      vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Show declaration' })
+      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
     end
   },
 }

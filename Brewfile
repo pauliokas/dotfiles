@@ -54,4 +54,4 @@ cask "webstorm"
 cask "pycharm-ce"
 cask "postman"
 cask "docker"
-cask "tailscale"
+mas "Tailscale", id: 1475387142

@@ -7,10 +7,11 @@ zplug "romkatv/powerlevel10k", as:theme, depth:1
 zplug "zsh-users/zsh-autosuggestions", depth:1
 zplug "zsh-users/zsh-syntax-highlighting", depth:1, defer:3
 
-zplug "plugins/docker-compose", from:oh-my-zsh, depth:1
-zplug "plugins/yarn", from:oh-my-zsh, depth:1
 zplug "plugins/command-not-found", from:oh-my-zsh, depth:1
+zplug "plugins/docker-compose", from:oh-my-zsh, depth:1
 zplug "plugins/iterm2", from:oh-my-zsh, depth:1
+zplug "plugins/terraform", from:oh-my-zsh, depth:1
+zplug "plugins/yarn", from:oh-my-zsh, depth:1
 
 zplug "$zplug_plugins/asdf", from:local
 zplug "$zplug_plugins/bat", from:local

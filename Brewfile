@@ -15,6 +15,7 @@ brew "lsd"
 brew "bat"
 brew "fd"
 brew "jq"
+brew "btop"
 
 brew "git"
 brew "git-interactive-rebase-tool"

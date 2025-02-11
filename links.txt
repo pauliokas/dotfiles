@@ -3,6 +3,7 @@ config/asdf-vm
 config/bat
 config/direnv
 config/gh
+config/ghostty
 config/git
 config/lsd
 config/nvim

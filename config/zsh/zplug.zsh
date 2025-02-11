@@ -15,6 +15,7 @@ zplug "plugins/yarn", from:oh-my-zsh, depth:1
 
 zplug "$zplug_plugins/asdf", from:local
 zplug "$zplug_plugins/bat", from:local
+zplug "$zplug_plugins/btop", from:local
 zplug "$zplug_plugins/carvertical", from:local
 zplug "$zplug_plugins/direnv", from:local
 zplug "$zplug_plugins/fzf", from:local

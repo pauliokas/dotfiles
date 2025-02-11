@@ -1,4 +1,5 @@
 brew "zplug"
+brew "oh-my-posh"
 
 brew "mas"
 

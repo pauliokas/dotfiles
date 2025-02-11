@@ -2,6 +2,8 @@ zstyle ":zplug:tag" defer 1
 
 zplug_plugins="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins"
 
+zplug "$zplug_plugins/oh-my-posh", from:local
+
 zplug "zsh-users/zsh-autosuggestions", depth:1
 zplug "zsh-users/zsh-syntax-highlighting", depth:1, defer:3
 

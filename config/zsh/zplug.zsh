@@ -2,8 +2,6 @@ zstyle ":zplug:tag" defer 1
 
 zplug_plugins="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/plugins"
 
-zplug "romkatv/powerlevel10k", as:theme, depth:1
-
 zplug "zsh-users/zsh-autosuggestions", depth:1
 zplug "zsh-users/zsh-syntax-highlighting", depth:1, defer:3
 
@@ -22,7 +20,6 @@ zplug "$zplug_plugins/fzf", from:local
 zplug "$zplug_plugins/jq", from:local
 zplug "$zplug_plugins/lsd", from:local
 zplug "$zplug_plugins/nvim", from:local
-zplug "$zplug_plugins/powerlevel10k", from:local, defer:2
 zplug "$zplug_plugins/python", from:local
 zplug "$zplug_plugins/serverless", from:local
 zplug "$zplug_plugins/zoxide", from:local

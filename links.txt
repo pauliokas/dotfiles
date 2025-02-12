@@ -7,5 +7,6 @@ config/ghostty
 config/git
 config/lsd
 config/nvim
+config/oh-my-posh
 config/tmux
 digrc

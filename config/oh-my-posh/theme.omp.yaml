@@ -12,6 +12,9 @@ console_title_template: "{{ if .Root }}(root) {{ end }}{{ .PWD }}"
 
 final_space: true
 
+secondary_prompt:
+  template: "\t"
+
 blocks:
   - type: prompt
     alignment: left

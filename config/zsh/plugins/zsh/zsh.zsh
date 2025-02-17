@@ -25,6 +25,8 @@ setopt HIST_FIND_NO_DUPS
 setopt HIST_VERIFY
 setopt HIST_BEEP
 
+setopt INTERACTIVE_COMMENTS
+
 unsetopt FLOW_CONTROL
 
 zstyle ':completion:*' completer _extensions _complete _approximate

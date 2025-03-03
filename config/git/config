@@ -94,5 +94,9 @@
 [fetch]
 	writeCommitGraph = true
 
+[absorb]
+	oneFixupPerCommit = true
+	maxStack = 50
+
 [include]
 	path = ~/.config/git/maintenance.gitconfig

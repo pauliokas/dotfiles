@@ -21,6 +21,7 @@ brew "btop"
 brew "git"
 brew "git-interactive-rebase-tool"
 brew "git-delta"
+brew "git-absorb"
 brew "gh"
 
 cask "font-meslo-lg-nerd-font"

@@ -3,8 +3,6 @@ brew "oh-my-posh"
 
 brew "mas"
 
-brew "asdf"
-
 brew "awscli"
 brew "aws-vault"
 cask "session-manager-plugin"

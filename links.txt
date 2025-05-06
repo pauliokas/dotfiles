@@ -1,5 +1,4 @@
 zshenv config/zsh
-config/asdf-vm
 config/bat
 config/direnv
 config/gh

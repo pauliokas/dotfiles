@@ -5,6 +5,7 @@ config/gh
 config/ghostty
 config/git
 config/lsd
+config/mise
 config/nvim
 config/oh-my-posh
 config/tmux

@@ -15,6 +15,7 @@ brew "bat"
 brew "fd"
 brew "jq"
 brew "btop"
+brew "mise"
 
 brew "git"
 brew "git-interactive-rebase-tool"

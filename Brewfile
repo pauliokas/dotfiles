@@ -17,6 +17,8 @@ brew "jq"
 brew "btop"
 brew "mise"
 
+tap "homebrew/command-not-found"
+
 brew "git"
 brew "git-interactive-rebase-tool"
 brew "git-delta"

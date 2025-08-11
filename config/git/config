@@ -100,3 +100,7 @@
 
 [include]
 	path = ~/.config/git/maintenance.gitconfig
+
+[includeIf "hasconfig:remote.*.url:**/*github.com*/**"]
+    path = ~/.config/git/github.gitconfig
+

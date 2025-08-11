@@ -1,0 +1,6 @@
+[user]
+  signingkey = BA9FE815AAC210AFB3E9C3D8D713CF96C2778023
+  email = 876738+pauliokas@users.noreply.github.com
+
+[commit]
+  gpgsign = true

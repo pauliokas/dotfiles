@@ -16,8 +16,11 @@ brew "fd"
 brew "jq"
 brew "btop"
 brew "mise"
+brew "gpg"
+brew "pinentry-mac"
 
 tap "homebrew/command-not-found"
+brew "hashicorp/tap/terraform"
 
 brew "git"
 brew "git-interactive-rebase-tool"
@@ -34,6 +37,8 @@ brew "poetry"
 brew "node"
 brew "serverless"
 brew "yarn"
+
+tap "hashicorp/tap"
 
 cask "firefox"
 cask "google-chrome"

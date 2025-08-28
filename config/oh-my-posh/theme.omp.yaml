@@ -27,9 +27,6 @@ blocks:
         type: path
         style: plain
 
-  - type: prompt
-    alignment: left
-    segments:
       - properties:
           branch_ahead_icon: "<#88C0D0>⇡ </>"
           branch_behind_icon: "<#88C0D0>⇣ </>"
@@ -48,9 +45,6 @@ blocks:
         type: git
         style: plain
 
-  - type: prompt
-    alignment: left
-    segments:
       - properties:
           style: austin
           threshold: 5000
@@ -72,6 +66,7 @@ blocks:
         foreground_templates:
           - "{{ if gt .Code 0 }}#BF616A{{ end }}"
 
+tooltips_action: replace
 tooltips:
   - type: aws
     tips:

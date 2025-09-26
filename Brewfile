@@ -60,5 +60,5 @@ cask "readdle-spark"
 cask "visual-studio-code"
 cask "webstorm"
 cask "postman"
-cask "docker"
+cask "docker-desktop"
 mas "Tailscale", id: 1475387142

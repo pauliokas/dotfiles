@@ -16,6 +16,7 @@ zplug "plugins/terraform", from:oh-my-zsh, depth:1
 zplug "plugins/yarn", from:oh-my-zsh, depth:1
 
 zplug "$zplug_plugins/bat", from:local
+zplug "$zplug_plugins/boop", from:local
 zplug "$zplug_plugins/btop", from:local
 zplug "$zplug_plugins/carvertical", from:local
 zplug "$zplug_plugins/direnv", from:local

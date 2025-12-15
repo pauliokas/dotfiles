@@ -81,6 +81,7 @@
 
 [advice]
 	detachedHead = false
+	forceDeleteBranch = false
 
 [init]
 	defaultBranch = master

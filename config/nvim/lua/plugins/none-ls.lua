@@ -10,7 +10,7 @@ return {
 			sources = {
         null_ls.builtins.completion.spell,
 
-        null_ls.builtins.diagnostics.commitlint,
+        -- null_ls.builtins.diagnostics.commitlint,
 
         -- markdown
         null_ls.builtins.code_actions.textlint,
